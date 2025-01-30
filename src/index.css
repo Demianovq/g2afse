@@ -7,9 +7,305 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #272727;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.first-swiper .swiper-slide-next .slide {
+  width: 298px;
+  height: 367px;
+}
+
+.first-swiper .swiper-slide-next .slide-text {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+
+  text-decoration-skip-ink: none;
+}
+
+.first-swiper .swiper-slide-next .slide-position {
+  margin-top: 50px;
+}
+
+.first-swiper .swiper-slide:not(.swiper-slide-next) {
+  margin-top: 40px;
+}
+
+.first-swiper .swiper-button-prev {
+  left: 0;
+}
+
+.first-swiper .swiper-button-next {
+  right: 0;
+}
+
+.swiper-pagination {
+  position: absolute;
+  top: 350px !important;
+}
+
+.swiper {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+/* HUETA */
+
+.neon-sign {
+  display: flex;
+  justify-content: space-between;
+  margin: 55px auto;
+
+  align-items: center;
+}
+
+/* Общие стили для букв */
+.letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.letter img {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+  transform-origin: center;
+  position: absolute;
+}
+
+.letter .light {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+  padding: 0;
+  display: block;
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7)) /* Тень */
+    drop-shadow(0 0 10px white); /* Внешнее свечение */
+}
+
+/* Черные буквы: начально скрыты, но участвуют в анимации */
+.letter .black {
+  opacity: 0;
+  visibility: visible;
+  filter: drop-shadow(9px 9px 4.5px #000000);
+}
+
+/* Анимации белых букв */
+@keyframes changeLetterL {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  4%,
+  12%,
+  20%,
+  36%,
+  44%,
+  52% {
+    opacity: 0;
+  }
+  21%,
+  33%,
+  49%,
+  65% {
+    opacity: 1;
+  }
+}
+
+@keyframes changeLetterI {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  4%,
+  12%,
+  20%,
+  28%,
+  36%,
+  44%,
+  52%,
+  60%,
+  68% {
+    opacity: 0;
+  }
+  5%,
+  17%,
+  29%,
+  41%,
+  53%,
+  61%,
+  69% {
+    opacity: 1;
+  }
+}
+
+@keyframes changeLetter2 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  4%,
+  16%,
+  24%,
+  32%,
+  40%,
+  48%,
+  56%,
+  64%,
+  72% {
+    opacity: 0;
+  }
+  9%,
+  23%,
+  37%,
+  51%,
+  65% {
+    opacity: 1;
+  }
+}
+
+/* Анимации черных букв (противофаза) */
+@keyframes changeLetterL_black {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  4%,
+  12%,
+  20%,
+  36%,
+  44%,
+  52% {
+    opacity: 1;
+  }
+  21%,
+  33%,
+  49%,
+  65% {
+    opacity: 0;
+  }
+}
+
+@keyframes changeLetterI_black {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  4%,
+  12%,
+  20%,
+  28%,
+  36%,
+  44%,
+  52%,
+  60%,
+  68% {
+    opacity: 1;
+  }
+  5%,
+  17%,
+  29%,
+  41%,
+  53%,
+  61%,
+  69% {
+    opacity: 0;
+  }
+}
+
+@keyframes changeLetter2_black {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  4%,
+  16%,
+  24%,
+  32%,
+  40%,
+  48%,
+  56%,
+  64%,
+  72% {
+    opacity: 1;
+  }
+  9%,
+  23%,
+  37%,
+  51%,
+  65% {
+    opacity: 0;
+  }
+}
+
+/* Применяем анимации */
+.letter.l .light {
+  animation: changeLetterL 3s steps(1) infinite;
+}
+.letter.i .light {
+  animation: changeLetterI 3s steps(1) infinite;
+}
+.letter.num2 .light {
+  animation: changeLetter2 3s steps(1) infinite;
+}
+
+.letter.l .black {
+  animation: changeLetterL_black 3s steps(1) infinite;
+}
+.letter.i .black {
+  animation: changeLetterI_black 3s steps(1) infinite;
+}
+.letter.num2 .black {
+  animation: changeLetter2_black 3s steps(1) infinite;
+}
+
+.letter.c {
+  margin-right: 60px;
+}
+
+.letter.l {
+  margin-right: 40px;
+}
+
+.letter.i {
+  margin-right: 50px;
+}
+
+.letter.C2 {
+  margin-right: 60px;
+}
+
+.letter.K {
+  margin-right: 60px;
+}
+
+.letter.num2 {
+  margin-right: 70px;
+}
+
+.letter.D {
+  margin-right: 65px;
+}
+.letter.E {
+  margin-right: 60px;
+}
+
+.letter.l {
+  margin-right: 40px;
+}
+
+.letter.i {
+  margin-right: 40px;
 }
