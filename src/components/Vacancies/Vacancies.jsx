@@ -13,7 +13,6 @@ import {
   VacanciesBgStyled1,
   VacanciesBgStyled2,
   VacanciesBgStyled3,
-  VacanciesBgStyled4,
 } from './Vacancies.styled';
 
 import { Container } from 'components/Container/Container.styled';

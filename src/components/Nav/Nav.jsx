@@ -1,4 +1,3 @@
-import { useRef } from 'react';
 import {
   NavSection,
   NavBtn,
@@ -12,7 +11,6 @@ import logo from 'images/LogoGlobal/Logo.svg';
 import ButtonLogIn from 'images/Nav/ButtonLogIn/ButtonLogIn.svg';
 
 export const Nav = () => {
-  const ref = useRef(null);
   return (
     <>
       <NavSection>

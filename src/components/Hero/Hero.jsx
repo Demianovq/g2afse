@@ -1,13 +1,11 @@
 import {
   HeroSection,
   HeroFirstText,
-  HeroNameText,
   HeroSecondText,
   HeroContent,
   HeroBtn,
   HeroBtnStyle,
 } from './Hero.styled';
-import { AnimationComponent } from './HeroAnimation';
 
 import svg1 from 'images/Lightempty/LC.svg';
 import svg2 from 'images/Darkempty/DC.svg';
