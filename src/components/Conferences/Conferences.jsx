@@ -4,7 +4,6 @@ import {
   ConfBox,
   ConfBoxImg,
 } from './Conferences.styled';
-import { Container } from 'components/Container/Container.styled';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules';

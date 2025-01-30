@@ -44,22 +44,38 @@ export const Contacts = () => {
               <ItemPosition>CBDO</ItemPosition>
               <SocialList>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={Telegram} alt="Telegram" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={Mail} alt="Mail" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={LinkedIn} alt="LinkedIn" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={Skype} alt="Skype" />
                   </a>
                 </li>
@@ -72,22 +88,38 @@ export const Contacts = () => {
               <Bg2 src={ContactsBg1} alt="" />
               <SocialList>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={Telegram} alt="Telegram" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={Mail} alt="Mail" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={LinkedIn} alt="LinkedIn" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={Skype} alt="Skype" />
                   </a>
                 </li>
@@ -99,22 +131,38 @@ export const Contacts = () => {
               <ItemPosition>Co-Founder&CEO</ItemPosition>
               <SocialList>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={Telegram} alt="Telegram" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={Mail} alt="Mail" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={LinkedIn} alt="LinkedIn" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={Skype} alt="Skype" />
                   </a>
                 </li>
@@ -127,22 +175,38 @@ export const Contacts = () => {
               <Bg3 src={ContactsBg2} alt="BackGround" />
               <SocialList>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={Telegram} alt="Telegram" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={Mail} alt="Mail" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={LinkedIn} alt="LinkedIn" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={Skype} alt="Skype" />
                   </a>
                 </li>
@@ -155,22 +219,38 @@ export const Contacts = () => {
               <ItemPosition>Affiliate Manager</ItemPosition>
               <SocialList>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={Telegram} alt="Telegram" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={Mail} alt="Mail" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={LinkedIn} alt="LinkedIn" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://www.facebook.com"
+                  >
                     <img src={Skype} alt="Skype" />
                   </a>
                 </li>
