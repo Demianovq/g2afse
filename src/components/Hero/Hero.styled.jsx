@@ -1,6 +1,9 @@
 import styled from 'styled-components';
-import HeroBg from 'images/BackGrounds/HeroBg.png';
+import HeroBg from 'images/BackGrounds/HeroBg.svg';
+import HeroBg1600 from 'images/BackGrounds/HeroBg1600.svg';
 import HeroBtnBg from 'images/BackGrounds/HeroBtnBg.png';
+
+import HeroBtnBgHover from 'images/BackGrounds/HeroBtnBgHover.svg';
 
 export const HeroSection = styled('div')`
   padding-top: 33px;
@@ -17,16 +20,10 @@ export const HeroFirstText = styled('p')`
   text-decoration-skip-ink: none;
   color: #0394eb;
   margin-top: 150px;
+  @media screen and (min-width: 1600px) {
+    font-size: 100px;
+  }
 `;
-
-// export const HeroNameText = styled('ul')`
-//   list-style: none;
-//   display: flex;
-//   margin-left: auto;
-//   margin-right: auto;
-// `;
-
-// export const HeroNameTextItem = styled('li')``;
 
 export const HeroNameText = styled('h1')`
   margin: 0;
@@ -41,7 +38,6 @@ export const HeroNameText = styled('h1')`
 `;
 
 export const HeroSecondText = styled('h2')`
-  margin: 0;
   font-family: Lacquer;
   font-size: 75px;
   font-weight: 400;
@@ -52,6 +48,10 @@ export const HeroSecondText = styled('h2')`
   color: #0394eb;
   margin: 10px;
   margin-bottom: 30px;
+  @media screen and (min-width: 1600px) {
+    margin-bottom: 30px;
+    font-size: 100px;
+  }
 `;
 
 export const HeroContent = styled('div')`
@@ -63,21 +63,39 @@ export const HeroContent = styled('div')`
   background-position: center;
   background-repeat: no-repeat;
   height: 450px;
+  @media screen and (min-width: 1600px) {
+    background-image: url('${HeroBg1600}');
+    height: 633px;
+  }
 `;
 
 export const HeroBtn = styled('p')`
   color: #ffffff;
   font-family: Lacquer;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 400;
   line-height: 54px;
+  @media screen and (min-width: 1600px) {
+    font-size: 50px;
+    line-height: 60px;
+  }
 `;
 
-export const HeroBtnStyle = styled('div')`
+export const HeroBtnStyle = styled('a')`
+  all: unset;
+  text-decoration: none; /* Убираем подчеркивание */
+  cursor: pointer;
   display: flex;
   justify-content: center;
   background-image: url('${HeroBtnBg}');
   background-position: center;
   background-repeat: no-repeat;
   text-transform: lowercase;
+  width: 280px;
+
+  margin-left: auto;
+  margin-right: auto;
+  &:hover {
+    background-image: url('${HeroBtnBgHover}');
+  }
 `;

@@ -18,6 +18,9 @@ export const VacanciesTitle = styled('h3')`
   text-decoration-skip-ink: none;
   color: #f0f8ff;
   text-transform: uppercase;
+  @media screen and (min-width: 1600px) {
+    font-size: 120px;
+  }
 `;
 
 export const AffiliateBlock = styled('div')`
@@ -29,9 +32,27 @@ export const AffiliateBlock = styled('div')`
   box-shadow: 0px 2.82px 2.82px 0px #00000040;
   background: #fffefe0d;
   margin-top: 65px;
-  padding-left: 25px;
+
   position: relative;
   z-index: 2;
+  @media screen and (min-width: 1200px) and (max-width: 1599px) {
+    padding-left: 25px;
+  }
+  @media screen and (min-width: 1600px) {
+    max-width: 1250px;
+    margin: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+`;
+
+export const AffiliateStyledBlock = styled('div')`
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1600px) {
+    margin-left: 50px;
+  }
 `;
 
 export const ManagerTitle = styled('p')`
@@ -46,6 +67,11 @@ export const ManagerTitle = styled('p')`
   color: #f0f8ff;
   margin-top: 20px;
   margin-bottom: 20px;
+  @media screen and (min-width: 1600px) {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 32px;
+  }
 `;
 
 export const ManagerText = styled('span')`
@@ -60,37 +86,39 @@ export const ManagerText = styled('span')`
   text-decoration-skip-ink: none;
   color: #f0f8ff;
   max-width: 466px;
-`;
 
-export const ButtonCv = styled('a')`
-  position: relative;
-  width: 126px;
-  height: 40px;
-  color: #00caff;
+  @media screen and (min-width: 1600px) {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
 
-  margin-left: -15px;
-  margin-top: 28px;
-
-  border: none;
-
-  cursor: pointer;
-`;
-
-export const ButtonImg = styled('img')`
-  display: block;
-  position: absolute;
-  top: -45px;
-  right: -42px;
-  margin: 0;
-  padding: 0;
-  width: 170px;
+    max-width: 588px;
+  }
 `;
 
 export const AffiliateGif = styled('div')`
   position: absolute;
-  top: 15px;
+  top: 20px;
   right: -20px;
   border-radius: 30px;
+  @media screen and (min-width: 1200px) and (max-width: 1599px) {
+    top: 25px;
+  }
+  @media screen and (min-width: 1600px) {
+    top: 30px;
+  }
+`;
+
+export const GifVideo = styled('video')`
+  width: 418px;
+  box-shadow: 3px 5px 16px 5px #000000a6;
+  z-index: 20;
+  position: relative;
+
+  border-radius: 20px;
+  @media screen and (min-width: 1600px) {
+    width: 585px;
+  }
 `;
 
 export const AccountBlock = styled('div')`
@@ -100,21 +128,35 @@ export const AccountBlock = styled('div')`
   box-shadow: 0px 2.82px 2.82px 0px #00000040;
   background: #fffefe0d;
   margin-top: 50px;
-  padding-bottom: 8px;
+
+  @media screen and (min-width: 1200px) and (max-width: 1599px) {
+  }
+  @media screen and (min-width: 1600px) {
+    max-width: 1250px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const AccountStyledBlock = styled('div')`
   display: flex;
   flex-direction: column;
   margin-left: 420px;
+  @media screen and (min-width: 1600px) {
+    margin-left: 610px;
+  }
 `;
 
 export const AccountGif = styled('div')`
   position: absolute;
-  top: 15px;
+  top: 18px;
   left: -20px;
   border-radius: 30px;
   z-index: 200;
+  @media screen and (min-width: 1600px) {
+    top: 25px;
+  }
 `;
 
 export const VacanciesBgStyled1 = styled('img')`

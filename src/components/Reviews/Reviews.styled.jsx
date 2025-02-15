@@ -10,6 +10,10 @@ export const ReviewsTitle = styled('h3')`
   color: #f0f8ff;
   margin: 0;
   margin-bottom: 50px;
+  @media screen and (min-width: 1600px) {
+    font-size: 120px;
+    margin-bottom: 100px;
+  }
 `;
 
 export const ReviewsSection = styled('div')`
@@ -37,5 +41,8 @@ export const ReviewsBgStyled2 = styled('img')`
 export const ReviewsBgStyled3 = styled('img')`
   position: absolute;
   bottom: -170px;
-  right: -15px;
+  right: 20px;
+  @media screen and (min-width: 1600px) {
+    right: 10px;
+  }
 `;

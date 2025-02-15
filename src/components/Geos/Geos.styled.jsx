@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 
+import HeroBtnBgWhite from 'images/BackGrounds/HeroBtnBgWhite.svg';
+import HeroBtnBgHover1 from 'images/BackGrounds/HeroBtnBgHover1.svg';
+
 export const GeosSection = styled('div')`
   margin-top: 90px;
   position: relative;
@@ -18,6 +21,15 @@ export const GeosTitle = styled('h3')`
 
   position: relative;
   z-index: 2;
+  @media screen and (min-width: 1600px) {
+    font-size: 120px;
+  }
+`;
+
+export const GeosImg = styled('img')`
+  @media screen and (min-width: 1600px) {
+    width: 1156px;
+  }
 `;
 
 export const GeosImgStyled = styled('div')`
@@ -25,6 +37,9 @@ export const GeosImgStyled = styled('div')`
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+  @media screen and (min-width: 1600px) {
+    margin-top: 100px;
+  }
 `;
 
 export const GeosList = styled('ul')`
@@ -35,6 +50,9 @@ export const GeosList = styled('ul')`
   margin: 0;
   margin-top: 50px;
   padding: 0;
+  @media screen and (min-width: 1600px) {
+    gap: 150px;
+  }
 `;
 
 export const GeosListItem = styled('li')`
@@ -80,22 +98,37 @@ export const GeosBtnBlock = styled('div')`
 `;
 
 export const GeosBtn = styled('a')`
-  display: block;
-  margin: 0 auto;
-  align-items: center;
+  all: unset;
+  text-decoration: none; /* Убираем подчеркивание */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background-image: url('${HeroBtnBgWhite}');
+  background-position: center;
+  background-repeat: no-repeat;
+  text-transform: lowercase;
   text-align: center;
-  text-decoration: none;
-  //styleName: 1200/B2;
+  align-items: center;
+  width: 280px;
+  height: 100px;
   font-family: Lacquer;
   font-size: 40px;
   font-weight: 400;
   line-height: 48px;
   text-decoration-skip-ink: none;
   color: #333333;
-  position: relative;
-  z-index: 2;
-  padding: 12px 45px;
-  text-transform: lowercase;
+
+  margin-left: auto;
+  margin-right: auto;
+  &:hover {
+    background-image: url('${HeroBtnBgHover1}');
+    color: white;
+  }
+
+  @media screen and (min-width: 1600px) {
+    font-size: 50px;
+    line-height: 60px;
+  }
 `;
 
 export const GeosBtnImg = styled('img')`
@@ -108,6 +141,9 @@ export const GeosBgStyle1 = styled('img')`
   position: absolute;
   top: 8%;
   right: -10%;
+  @media screen and (min-width: 1600px) {
+    right: -7%;
+  }
 `;
 
 export const GeosBgStyle2 = styled('img')`
@@ -128,4 +164,7 @@ export const GeosBgStyle4 = styled('img')`
   bottom: 10%;
   right: 2%;
   z-index: 1;
+  @media screen and (min-width: 1600px) {
+    right: 0%;
+  }
 `;

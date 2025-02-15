@@ -18,6 +18,11 @@ code {
 .first-swiper .swiper-slide-next .slide {
   width: 298px;
   height: 367px;
+  @media screen and (min-width: 1600px) {
+    width: 400px;
+    height: 510px;
+    padding: 50px 60px;
+  }
 }
 
 .first-swiper .swiper-slide-next .slide-text {
@@ -25,13 +30,26 @@ code {
   font-size: 15px;
   font-weight: 400;
   line-height: 19px;
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
 
-  text-decoration-skip-ink: none;
+  @media screen and (min-width: 1600px) {
+    font-size: 17px;
+    line-height: 25px;
+  }
 }
 
 .first-swiper .swiper-slide-next .slide-position {
   margin-top: 50px;
+  @media screen and (min-width: 1600px) {
+    margin-top: 150px;
+    font-size: 17px;
+  }
+}
+
+.first-swiper .swiper-slide-next .slide-title {
+  @media screen and (min-width: 1600px) {
+    font-size: 40px;
+  }
 }
 
 .first-swiper .swiper-slide:not(.swiper-slide-next) {
@@ -56,17 +74,18 @@ code {
   padding-bottom: 30px;
 }
 
-/* HUETA */
-
 .neon-sign {
   display: flex;
   justify-content: space-between;
   margin: 55px auto;
 
   align-items: center;
+
+  @media screen and (min-width: 1600px) {
+    margin: 100px auto;
+  }
 }
 
-/* Общие стили для букв */
 .letter {
   display: flex;
   justify-content: center;
@@ -83,6 +102,10 @@ code {
   object-fit: contain;
   transform-origin: center;
   position: absolute;
+  @media screen and (min-width: 1600px) {
+    max-width: 111px;
+    max-height: 111px;
+  }
 }
 
 .letter .light {
@@ -93,16 +116,14 @@ code {
   display: block;
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7)) /* Тень */
     drop-shadow(0 0 10px white); /* Внешнее свечение */
-}
+} /* Черные буквы: начально скрыты, но участвуют в анимации */
 
-/* Черные буквы: начально скрыты, но участвуют в анимации */
 .letter .black {
   opacity: 0;
   visibility: visible;
   filter: drop-shadow(9px 9px 4.5px #000000);
 }
 
-/* Анимации белых букв */
 @keyframes changeLetterL {
   0%,
   100% {
@@ -164,19 +185,22 @@ code {
   48%,
   56%,
   64%,
-  72% {
+  72%,
+  82%,
+  92% {
     opacity: 0;
   }
   9%,
   23%,
   37%,
   51%,
-  65% {
+  65%,
+  77%,
+  87% {
     opacity: 1;
   }
 }
 
-/* Анимации черных букв (противофаза) */
 @keyframes changeLetterL_black {
   0%,
   100% {
@@ -238,74 +262,249 @@ code {
   48%,
   56%,
   64%,
-  72% {
+  72%,
+  82%,
+  92% {
     opacity: 1;
   }
   9%,
   23%,
   37%,
   51%,
-  65% {
+  65%,
+  77%,
+  87% {
     opacity: 0;
   }
 }
 
-/* Применяем анимации */
+@keyframes flicker2_light {
+  0%,
+  100% {
+    opacity: 1;
+    filter: drop-shadow(0px 0px 10px #0394eb);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    opacity: 0;
+    filter: drop-shadow(0px 0px 5px #0394eb);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    opacity: 1;
+    filter: drop-shadow(0px 0px 15px #0394eb);
+  }
+}
+
+@keyframes flicker2_black {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    opacity: 1;
+    filter: drop-shadow(0px 0px 15px #0394eb);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    opacity: 0;
+  }
+}
+
 .letter.l .light {
-  animation: changeLetterL 3s steps(1) infinite;
+  animation: changeLetterL 2s steps(1) 1 forwards;
 }
 .letter.i .light {
-  animation: changeLetterI 3s steps(1) infinite;
+  animation: changeLetterI 2s steps(1) 1 forwards;
 }
 .letter.num2 .light {
-  animation: changeLetter2 3s steps(1) infinite;
+  animation: changeLetter2 2s steps(1) 1 forwards;
 }
 
 .letter.l .black {
-  animation: changeLetterL_black 3s steps(1) infinite;
+  animation: changeLetterL_black 2s steps(1) 1 forwards;
 }
 .letter.i .black {
-  animation: changeLetterI_black 3s steps(1) infinite;
+  animation: changeLetterI_black 2s steps(1) 1 forwards;
 }
 .letter.num2 .black {
-  animation: changeLetter2_black 3s steps(1) infinite;
+  animation: changeLetter2_black 2s steps(1) 1 forwards;
+}
+
+.letter.num2 .black.flicker {
+  animation: flicker2_black 1s steps(1);
+}
+
+.letter.num2 .light.flicker {
+  animation: flicker2_light 1s steps(1);
 }
 
 .letter.c {
   margin-right: 60px;
+  @media screen and (min-width: 1600px) {
+    margin-right: 80px;
+  }
 }
 
 .letter.l {
   margin-right: 40px;
+  @media screen and (min-width: 1600px) {
+    margin-right: 60px;
+  }
 }
 
 .letter.i {
   margin-right: 50px;
+  @media screen and (min-width: 1600px) {
+    margin-right: 70px;
+  }
 }
 
 .letter.C2 {
   margin-right: 60px;
+  @media screen and (min-width: 1600px) {
+    margin-right: 80px;
+  }
 }
 
 .letter.K {
   margin-right: 60px;
+  @media screen and (min-width: 1600px) {
+    margin-right: 80px;
+  }
 }
 
 .letter.num2 {
   margin-right: 70px;
+  @media screen and (min-width: 1600px) {
+    margin-right: 90px;
+  }
 }
 
 .letter.D {
   margin-right: 65px;
+  @media screen and (min-width: 1600px) {
+    margin-right: 85px;
+  }
 }
 .letter.E {
   margin-right: 60px;
+  @media screen and (min-width: 1600px) {
+    margin-right: 80px;
+  }
 }
 
 .letter.l {
   margin-right: 40px;
+  @media screen and (min-width: 1600px) {
+    margin-right: 60px;
+  }
 }
 
 .letter.i {
   margin-right: 40px;
+  @media screen and (min-width: 1600px) {
+    margin-right: 60px;
+  }
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  width: 180px;
+  background-color: #0394eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+  margin-top: 22px;
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29.26px;
+  letter-spacing: 0%;
+}
+
+.custom-file-upload:hover {
+  background-color: #005f99;
+}
+
+.custom-file-upload input {
+  display: none; /* Полностью скрываем стандартный инпут */
+}
+
+.file-name {
+  display: block;
+  max-width: 180px;
+  position: absolute;
+  top: 24px;
+  left: 200px;
+
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19.5px;
+  letter-spacing: 0%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: Auto;
+}
+
+.swiper-container {
+  overflow: visible !important;
+}
+.swiper-wrapper {
+  display: flex !important;
+}
+
+.ManagerText {
+  @media screen and (min-width: 1200px) and (max-width: 1599px) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1600px) {
+    margin-top: 32px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 13px !important;
+  height: 13px !important;
+  opacity: 0.5; /* Полупрозрачные */
+}
+
+.second-swiper {
+  padding-bottom: 80px;
+}
+
+.second-swiper .swiper-pagination {
+  top: 380px !important; /* Опускаем только в третьей карусели */
+  @media screen and (min-width: 1200px) and (max-width: 1599px) {
+    top: 380px !important;
+  }
+}
+.third-swiper .swiper-pagination {
+  top: 520px !important;
+  @media screen and (min-width: 1200px) and (max-width: 1599px) {
+    top: 550px !important;
+  }
+}
+
+body {
+  overflow-x: hidden;
 }

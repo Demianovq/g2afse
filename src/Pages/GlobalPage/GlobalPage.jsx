@@ -6,6 +6,7 @@ import { Geos } from 'components/Geos/Geos';
 import { Vacancies } from 'components/Vacancies/Vacancies';
 import { Contacts } from 'components/Contacts/Contacts';
 import { Conferences } from 'components/Conferences/Conferences';
+import { Banner } from 'components/Banner/Banner';
 
 export const GlobalPage = () => {
   return (
@@ -18,6 +19,7 @@ export const GlobalPage = () => {
       <Vacancies />
       <Contacts />
       <Conferences />
+      <Banner />
     </>
   );
 };

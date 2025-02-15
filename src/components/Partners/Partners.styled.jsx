@@ -7,21 +7,30 @@ export const PartnersSection = styled('div')`
 `;
 
 export const PartnersImgBox = styled('div')`
-  width: 200px;
-  height: 150px;
+  width: 260px;
+  height: 200px;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   margin-right: 50px;
+  overflow: hidden;
+
+  @media screen and (min-width: 1600px) {
+    margin-right: 100px;
+  }
 `;
 
 export const PartnersImgGlobal = styled('img')`
-  max-width: 100%;
-  max-height: 100%;
+  width: 200px;
+  height: 150px;
   object-fit: contain;
   align-items: center;
   text-align: center;
+
+  @media screen and (min-width: 1600px) {
+    width: 260px;
+  }
 `;
 
 export const PartnersListInfo = styled('ul')`
@@ -84,4 +93,8 @@ export const PartnersBgImg = styled('img')`
   top: 45%;
   left: 13.5%;
   z-index: 1;
+`;
+
+export const MarqueeBox = styled('div')`
+  max-width: 1800px;
 `;

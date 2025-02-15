@@ -7,6 +7,8 @@ import {
   HeroBtnStyle,
 } from './Hero.styled';
 
+import FlickeringNumber from './HeroAnimation';
+
 import svg1 from 'images/Lightempty/LC.svg';
 import svg2 from 'images/Darkempty/DC.svg';
 import svg3 from 'images/Lightempty/LL.svg';
@@ -25,6 +27,7 @@ import svg15 from 'images/Lightempty/LE.svg';
 import svg16 from 'images/Darkempty/DE.svg';
 import svg17 from 'images/Lightempty/LP.svg';
 import svg18 from 'images/Darkempty/DP.svg';
+
 export const Hero = () => {
   return (
     <>
@@ -77,12 +80,17 @@ export const Hero = () => {
               <img class="black" src={svg18} alt="P" />
             </div>
           </div>
+          <FlickeringNumber />
 
           {/* <AnimationComponent /> */}
           {/* <HeroNameText>Click2dep</HeroNameText> */}
           {/* <HeroNameText>Click2dep</HeroNameText> */}
           <HeroSecondText>CPA Agency</HeroSecondText>
-          <HeroBtnStyle>
+          <HeroBtnStyle
+            target="_blank"
+            rel="noreferrer"
+            href="https://click2dep.affise.com/v2/sign/up"
+          >
             <HeroBtn>Join Us</HeroBtn>
           </HeroBtnStyle>
         </HeroContent>

@@ -17,7 +17,7 @@ export const Reviews = () => {
   return (
     <>
       <Container style={{ position: 'relative' }}>
-        <ReviewsSection>
+        <ReviewsSection id="section2">
           <ReviewsTitle>REVIEWS</ReviewsTitle>
         </ReviewsSection>
         <CarouselReviews />
