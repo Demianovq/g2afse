@@ -19,7 +19,7 @@ import { Container } from 'components/Container/Container.styled';
 export const Stats = () => {
   return (
     <>
-      <StatsSection>
+      <StatsSection id="section1">
         <Container>
           <StatsTextFirst>
             <StatsTextf>More</StatsTextf>
@@ -43,16 +43,19 @@ export const Stats = () => {
 
           <StatsList>
             <StatsListItem>
-              600+ <StatsListItemText>offers</StatsListItemText>
+              <span>600+</span> <StatsListItemText>offers</StatsListItemText>
             </StatsListItem>
             <StatsListItem>
-              200+ <StatsListItemText>Major Teams</StatsListItemText>
+              <span>200+</span>
+              <StatsListItemText>Major Teams</StatsListItemText>
             </StatsListItem>
             <StatsListItem>
-              24/7 <StatsListItemText>Professional support</StatsListItemText>
+              <span>24/7</span>
+              <StatsListItemText>Professional support</StatsListItemText>
             </StatsListItem>
             <StatsListItem>
-              2% <StatsListItemText>Referral program</StatsListItemText>
+              <span>2%</span>
+              <StatsListItemText>Referral program</StatsListItemText>
             </StatsListItem>
           </StatsList>
         </Container>

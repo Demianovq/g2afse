@@ -2,10 +2,8 @@ import {
   PartnersImgGlobal,
   PartnersImgBox,
   PartnersSection,
-  PartnersListInfo,
-  PartnersListInfoTitle,
-  PartnersListInfoText,
   PartnersBgImg,
+  MarqueeBox,
 } from './Partners.styled';
 
 import { PureContainer } from 'components/Container/Container.styled';
@@ -27,18 +25,18 @@ export const Partners = () => {
   const images = [
     Chilli,
     Wow,
+    Bit7,
     MioMedia,
     Gypsy,
+    Partners247,
     Stars7,
     Boomerang,
-    Bit7,
-    Partners247,
   ];
 
   return (
     <PureContainer>
       <PartnersSection>
-        <div style={{ height: '200px' }}>
+        <MarqueeBox>
           <Marquee velocity={50} minScale={0.7} resetAfterTries={100}>
             {images.map((src, index) => (
               <PartnersImgBox key={index}>
@@ -46,8 +44,8 @@ export const Partners = () => {
               </PartnersImgBox>
             ))}
           </Marquee>
-        </div>
-        <PartnersListInfo>
+        </MarqueeBox>
+        {/* <PartnersListInfo>
           <li>
             <PartnersListInfoTitle>Types</PartnersListInfoTitle>
             <PartnersListInfoText>Casino</PartnersListInfoText>
@@ -60,7 +58,7 @@ export const Partners = () => {
             <PartnersListInfoTitle>Top Source</PartnersListInfoTitle>
             <PartnersListInfoText>Fb, Ppc</PartnersListInfoText>
           </li>
-        </PartnersListInfo>
+        </PartnersListInfo> */}
         <PartnersBgImg src={PartnersBg} alt="" />
       </PartnersSection>
     </PureContainer>

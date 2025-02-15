@@ -6,6 +6,11 @@ export const StatsSection = styled('div')`
   background-image: url('${SmokeBg}');
   background-position: 50% 80%;
   background-repeat: no-repeat;
+  @media screen and (min-width: 1600px) {
+    background-size: 1549px;
+    padding-top: 150px;
+    background-position: 50% -10%;
+  }
 `;
 
 export const StatsTextFirst = styled('div')`
@@ -20,6 +25,9 @@ export const StatsTextFirst = styled('div')`
   display: flex;
   justify-content: flex-start;
   gap: 12px;
+  @media screen and (min-width: 1600px) {
+    font-size: 64px;
+  }
 `;
 
 export const StatsTextFirstStyled = styled('p')`
@@ -32,6 +40,9 @@ export const StatsTextFirstStyled = styled('p')`
   margin: 0;
 
   color: #0394eb;
+  @media screen and (min-width: 1600px) {
+    font-size: 25px;
+  }
 `;
 
 export const StatsTextSecond = styled('div')`
@@ -47,6 +58,9 @@ export const StatsTextSecond = styled('div')`
   display: flex;
   justify-content: end;
   gap: 12px;
+  @media screen and (min-width: 1600px) {
+    font-size: 25px;
+  }
 `;
 
 export const StatsTextSecondStyled = styled('p')`
@@ -62,6 +76,9 @@ export const StatsTextSecondStyled = styled('p')`
   margin: 0;
 
   color: #f0f8ff;
+  @media screen and (min-width: 1600px) {
+    font-size: 64px;
+  }
 `;
 
 export const StatsTextp = styled('p')`
@@ -83,17 +100,20 @@ export const StatsTextMission = styled('p')`
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #f0f8ff;
+  @media screen and (min-width: 1600px) {
+    font-size: 30px;
+  }
 `;
 
 export const StatsList = styled('ul')`
   list-style: none;
   display: flex;
   justify-content: center;
-  margin-right: 45px;
-  margin-left: 45px;
+  margin: 50px 0px 0px 0px;
+
   gap: 100px;
   border: 1.5px solid #57c3ff;
-  border-radius: 10px;
+  border-radius: 19px;
   box-shadow: 0px 0px 1px 0px #00a3ff;
 
   box-shadow: 0px 0px 1px 0px #0394eb;
@@ -101,6 +121,13 @@ export const StatsList = styled('ul')`
   box-shadow: 0px 0px 2px 0px #0394eb;
 
   box-shadow: 0px 0px 10px 0px #0394eb;
+  @media screen and (min-width: 1600px) {
+    margin: 100px 50px 0px 50px;
+    gap: 120px;
+    margin-bottom: 30px;
+    padding: 30px 0 15px 0px;
+    border: 2.5px solid #57c3ff;
+  }
 `;
 
 export const StatsListItem = styled('li')`
@@ -116,10 +143,15 @@ export const StatsListItem = styled('li')`
   display: flex;
 
   flex-direction: column;
+
   text-align: center;
   padding-top: 30px;
   padding-bottom: 15px;
   text-shadow: 1px 1px 3.5px #00a3ff, 1px 1px 25px #0394eb, 1px 1px 50px #0394eb;
+  @media screen and (min-width: 1600px) {
+    font-size: 45px;
+    gap: 10px;
+  }
 `;
 
 export const StatsListItemText = styled('p')`
@@ -132,9 +164,18 @@ export const StatsListItemText = styled('p')`
   text-decoration-skip-ink: none;
   color: #57c3ff;
   text-shadow: 1px 1px 3.5px #00a3ff, 1px 1px 25px #0394eb, 1px 1px 50px #0394eb;
+  @media screen and (min-width: 1600px) {
+    font-size: 20px;
+  }
 `;
 
 export const StatsImg = styled('img')`
   display: block;
   width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 1600px) {
+    width: 1123px;
+    margin-top: 20px;
+  }
 `;
