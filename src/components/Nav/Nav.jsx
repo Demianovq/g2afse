@@ -57,7 +57,7 @@ export const Nav = () => {
         <NavBtn
           target="_blank"
           rel="noreferrer"
-          href="https://click2dep.affise.com/v2/sign/in"
+          href="//click2dep.affise.com/v2/sign/in"
         >
           <NavBtnImg src={ButtonLogIn} alt="LogIn icon" />
           <NavBtnText>Log In</NavBtnText>

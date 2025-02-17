@@ -82,14 +82,11 @@ export const Hero = () => {
           </div>
           <FlickeringNumber />
 
-          {/* <AnimationComponent /> */}
-          {/* <HeroNameText>Click2dep</HeroNameText> */}
-          {/* <HeroNameText>Click2dep</HeroNameText> */}
           <HeroSecondText>CPA Agency</HeroSecondText>
           <HeroBtnStyle
             target="_blank"
             rel="noreferrer"
-            href="https://click2dep.affise.com/v2/sign/up"
+            href="//click2dep.affise.com/v2/sign/up"
           >
             <HeroBtn>Join Us</HeroBtn>
           </HeroBtnStyle>

@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
-import React, { useRef, useEffect, useState } from 'react';
+import React from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -61,7 +61,7 @@ export const CarouselContacts = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://t.me/artem_click2dep"
+                    href="//t.me/artem_click2dep"
                   >
                     <img src={Telegram} alt="Telegram" />
                   </a>
@@ -79,7 +79,7 @@ export const CarouselContacts = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://www.linkedin.com/in/artem-click2dep-456240276/"
+                    href="//www.linkedin.com/in/artem-click2dep-456240276/"
                   >
                     <img src={LinkedIn} alt="LinkedIn" />
                   </a>
@@ -88,7 +88,7 @@ export const CarouselContacts = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://join.skype.com/invite/CVBtw6m6bU2z"
+                    href="//join.skype.com/invite/CVBtw6m6bU2z"
                   >
                     <img src={Skype} alt="Skype" />
                   </a>
@@ -114,7 +114,7 @@ export const CarouselContacts = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://t.me/eva_click2dep"
+                    href="//t.me/eva_click2dep"
                   >
                     <img src={Telegram} alt="Telegram" />
                   </a>
@@ -132,7 +132,7 @@ export const CarouselContacts = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://www.linkedin.com/in/eva-bazan-7905b9248"
+                    href="//www.linkedin.com/in/eva-bazan-7905b9248"
                   >
                     <img src={LinkedIn} alt="LinkedIn" />
                   </a>
@@ -141,7 +141,7 @@ export const CarouselContacts = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://join.skype.com/invite/LKpoW1O76w1d"
+                    href="//join.skype.com/invite/LKpoW1O76w1d"
                   >
                     <img src={Skype} alt="Skype" />
                   </a>
@@ -167,7 +167,7 @@ export const CarouselContacts = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://t.me/serhii_click2dep"
+                    href="//t.me/serhii_click2dep"
                   >
                     <img src={Telegram} alt="Telegram" />
                   </a>
@@ -185,7 +185,7 @@ export const CarouselContacts = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="www.linkedin.com/in/serhii-tsyhanenko-62b56b2b1"
+                    href="//www.linkedin.com/in/serhii-tsyhanenko-62b56b2b1"
                   >
                     <img src={LinkedIn} alt="LinkedIn" />
                   </a>
@@ -194,7 +194,7 @@ export const CarouselContacts = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://join.skype.com/invite/JqsqBiwnOhBC"
+                    href="//join.skype.com/invite/JqsqBiwnOhBC"
                   >
                     <img src={Skype} alt="Skype" />
                   </a>
@@ -220,7 +220,7 @@ export const CarouselContacts = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://t.me/click2depp_nikita"
+                    href="//t.me/click2depp_nikita"
                   >
                     <img src={Telegram} alt="Telegram" />
                   </a>
@@ -238,7 +238,7 @@ export const CarouselContacts = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://www.linkedin.com/in/nikita-mosenz-2bb6482b3/"
+                    href="//www.linkedin.com/in/nikita-mosenz-2bb6482b3/"
                   >
                     <img src={LinkedIn} alt="LinkedIn" />
                   </a>
@@ -247,7 +247,7 @@ export const CarouselContacts = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://join.skype.com/invite/IdR6HBKEMrYb"
+                    href="//join.skype.com/invite/IdR6HBKEMrYb"
                   >
                     <img src={Skype} alt="Skype" />
                   </a>
@@ -274,7 +274,7 @@ export const CarouselContacts = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://t.me/antonclick2dep"
+                    href="//t.me/antonclick2dep"
                   >
                     <img src={Telegram} alt="Telegram" />
                   </a>
@@ -292,7 +292,7 @@ export const CarouselContacts = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://www.linkedin.com/in/anton-shmakov-72a099322/"
+                    href="//www.linkedin.com/in/anton-shmakov-72a099322/"
                   >
                     <img src={LinkedIn} alt="LinkedIn" />
                   </a>
@@ -301,7 +301,7 @@ export const CarouselContacts = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://join.skype.com/invite/LJNoTuvngI1c"
+                    href="//join.skype.com/invite/LJNoTuvngI1c"
                   >
                     <img src={Skype} alt="Skype" />
                   </a>
@@ -327,7 +327,7 @@ export const CarouselContacts = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://t.me/kiril_click2dep"
+                    href="//t.me/kiril_click2dep"
                   >
                     <img src={Telegram} alt="Telegram" />
                   </a>
@@ -345,7 +345,7 @@ export const CarouselContacts = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://www.linkedin.com/in/kiril-click2dep-122a31299/"
+                    href="//www.linkedin.com/in/kiril-click2dep-122a31299/"
                   >
                     <img src={LinkedIn} alt="LinkedIn" />
                   </a>
@@ -354,7 +354,7 @@ export const CarouselContacts = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://join.skype.com/invite/Ms9vkkl4Zdrk"
+                    href="//join.skype.com/invite/Ms9vkkl4Zdrk"
                   >
                     <img src={Skype} alt="Skype" />
                   </a>

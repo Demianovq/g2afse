@@ -57,10 +57,7 @@ export const Geos = () => {
           </GeosList>
 
           <GeosBtnBlock>
-            <GeosBtn
-              target="_blank"
-              href="https://click2dep.affise.com/v2/sign/up"
-            >
+            <GeosBtn target="_blank" href="//click2dep.affise.com/v2/sign/up">
               Join us
             </GeosBtn>
           </GeosBtnBlock>

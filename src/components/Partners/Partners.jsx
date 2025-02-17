@@ -45,20 +45,7 @@ export const Partners = () => {
             ))}
           </Marquee>
         </MarqueeBox>
-        {/* <PartnersListInfo>
-          <li>
-            <PartnersListInfoTitle>Types</PartnersListInfoTitle>
-            <PartnersListInfoText>Casino</PartnersListInfoText>
-          </li>
-          <li>
-            <PartnersListInfoTitle>Top Geo</PartnersListInfoTitle>
-            <PartnersListInfoText>Fr, De</PartnersListInfoText>
-          </li>
-          <li>
-            <PartnersListInfoTitle>Top Source</PartnersListInfoTitle>
-            <PartnersListInfoText>Fb, Ppc</PartnersListInfoText>
-          </li>
-        </PartnersListInfo> */}
+
         <PartnersBgImg src={PartnersBg} alt="" />
       </PartnersSection>
     </PureContainer>

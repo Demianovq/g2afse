@@ -505,6 +505,11 @@ code {
   }
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  color: #f0f8ff;
+}
+
 body {
   overflow-x: hidden;
 }
