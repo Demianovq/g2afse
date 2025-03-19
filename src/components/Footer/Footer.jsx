@@ -14,11 +14,12 @@ import {
   FooterBg,
   FooterBtnJoinUs,
   SocialItemImg,
+  FooterStyledBlock,
+  FooterTextCopyMob,
+  FooterTermsLinkMob,
+  FooterTextLinkMob,
 } from './Footer.styled';
 
-import Instagram from 'images/Footer/Instagram.svg';
-import LinkedIn from 'images/Footer/LinkedIn.svg';
-import Telegram from 'images/Footer/Telegram.svg';
 import FooterBg1 from 'images/BackGrounds/FooterBg1.png';
 
 export const Footer = () => {
@@ -33,7 +34,7 @@ export const Footer = () => {
   return (
     <>
       <FooterSection>
-        <div>
+        <FooterStyledBlock>
           <FooterLogo
             src={logo}
             alt="Our Logo Click2dep"
@@ -90,7 +91,7 @@ export const Footer = () => {
           >
             Spray Paint PNGs by Vecteezy
           </FooterTextLink>
-        </div>
+        </FooterStyledBlock>
         <FooterSocialBlock>
           <FooterBtnStyled>
             <FooterBtnSignIn
@@ -115,12 +116,12 @@ export const Footer = () => {
                 href="//www.linkedin.com/company/click2dep/"
                 rel="noreferrer"
               >
-                <SocialItemImg src={LinkedIn} alt="LinkedIn Logo" />
+                <SocialItemImg alt="LinkedIn Logo" />
               </a>
             </li>
             <li>
               <a target="_blank" href="//t.me/click2dep" rel="noreferrer">
-                <SocialItemImg src={Telegram} alt="Telegram Logo" />
+                <SocialItemImg alt="Telegram Logo" />
               </a>
             </li>
             <li>
@@ -129,7 +130,7 @@ export const Footer = () => {
                 href="//www.instagram.com/click2dep"
                 rel="noreferrer"
               >
-                <SocialItemImg src={Instagram} alt="Instagram Logo" />
+                <SocialItemImg alt="Instagram Logo" />
               </a>
             </li>
           </FooterSocialList>
@@ -141,6 +142,20 @@ export const Footer = () => {
           </FooterTermsLink>
         </FooterSocialBlock>
         <FooterBg src={FooterBg1} alt="Background footer" />
+        <FooterTextCopyMob>Copyright © 2025 Click2Dep</FooterTextCopyMob>
+        <FooterTermsLinkMob
+          target="_blank"
+          href="//drive.google.com/drive/folders/1jfOhUT6afbLKlyaWQ978VTxPqegFeL1_?usp=sharing"
+        >
+          Terms & conditions
+        </FooterTermsLinkMob>
+        <FooterTextLinkMob
+          href="//www.vecteezy.com/free-png"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Spray Paint PNGs by Vecteezy
+        </FooterTextLinkMob>
       </FooterSection>
     </>
   );

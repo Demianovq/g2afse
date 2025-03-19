@@ -12,6 +12,7 @@ import {
   GeosBgStyle2,
   GeosBgStyle3,
   GeosBgStyle4,
+  GeosTitleStyled,
 } from './Geos.styled';
 
 import GeosMap from 'images/Geos/GeosMap.svg';
@@ -29,7 +30,9 @@ export const Geos = () => {
     <>
       <Container>
         <GeosSection>
-          <GeosTitle>MAIN SOURCES&GEOS</GeosTitle>
+          <GeosTitle>
+            MAIN SOURCES <GeosTitleStyled>&</GeosTitleStyled> GEOS
+          </GeosTitle>
           <GeosImgStyled>
             <GeosImg src={GeosMap} alt="Geos Map" />
           </GeosImgStyled>

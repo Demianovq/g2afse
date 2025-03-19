@@ -8,3 +8,11 @@ export const SwiperCard = styled('div')`
   @media screen and (min-width: 1200px) and (max-width: 1599px) {
   }
 `;
+
+export const CarouselContactsBlock = styled('div')`
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+`;

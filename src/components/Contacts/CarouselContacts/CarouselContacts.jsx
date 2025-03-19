@@ -23,25 +23,25 @@ import {
   ItemName,
   ItemPosition,
   SocialList,
+  SocialListItemImg,
 } from '../Contacts.styled';
 
-import { SwiperCard } from './CarouselContacts.styled';
+import { SwiperCard, CarouselContactsBlock } from './CarouselContacts.styled';
 
 export const CarouselContacts = () => {
   return (
-    <div style={{ position: 'relative' }}>
+    <CarouselContactsBlock>
       <Swiper
         className="third-swiper"
         modules={[Pagination]}
         breakpoints={{
-          320: { slidesPerView: 1 }, // Для мобилок
-          768: { slidesPerView: 2 }, // Для планшетов
+          320: { slidesPerView: 2 }, // Для мобилок
+          768: { slidesPerView: 3 }, // Для планшетов
           1200: { slidesPerView: 3 }, // Для больших экранов
           1600: { slidesPerView: 5 }, // Например, для 1600px и выше
         }}
         pagination={{ clickable: true }}
         loop={true}
-        onSlideChange={() => console.log('slide change')}
       >
         <SwiperSlide>
           <div
@@ -63,16 +63,16 @@ export const CarouselContacts = () => {
                     rel="noreferrer"
                     href="//t.me/artem_click2dep"
                   >
-                    <img src={Telegram} alt="Telegram" />
+                    <SocialListItemImg src={Telegram} alt="Telegram" />
                   </a>
                 </li>
                 <li>
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="artem.click2dep@gmail.com"
+                    href="mailto:artem.click2dep@gmail.com"
                   >
-                    <img src={Mail} alt="Mail" />
+                    <SocialListItemImg src={Mail} alt="Mail" />
                   </a>
                 </li>
                 <li>
@@ -81,7 +81,7 @@ export const CarouselContacts = () => {
                     rel="noreferrer"
                     href="//www.linkedin.com/in/artem-click2dep-456240276/"
                   >
-                    <img src={LinkedIn} alt="LinkedIn" />
+                    <SocialListItemImg src={LinkedIn} alt="LinkedIn" />
                   </a>
                 </li>
                 <li>
@@ -90,7 +90,7 @@ export const CarouselContacts = () => {
                     rel="noreferrer"
                     href="//join.skype.com/invite/CVBtw6m6bU2z"
                   >
-                    <img src={Skype} alt="Skype" />
+                    <SocialListItemImg src={Skype} alt="Skype" />
                   </a>
                 </li>
               </SocialList>
@@ -116,16 +116,16 @@ export const CarouselContacts = () => {
                     rel="noreferrer"
                     href="//t.me/eva_click2dep"
                   >
-                    <img src={Telegram} alt="Telegram" />
+                    <SocialListItemImg src={Telegram} alt="Telegram" />
                   </a>
                 </li>
                 <li>
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="click2dep@gmail.com"
+                    href="mailto:click2dep@gmail.com"
                   >
-                    <img src={Mail} alt="Mail" />
+                    <SocialListItemImg src={Mail} alt="Mail" />
                   </a>
                 </li>
                 <li>
@@ -134,7 +134,7 @@ export const CarouselContacts = () => {
                     rel="noreferrer"
                     href="//www.linkedin.com/in/eva-bazan-7905b9248"
                   >
-                    <img src={LinkedIn} alt="LinkedIn" />
+                    <SocialListItemImg src={LinkedIn} alt="LinkedIn" />
                   </a>
                 </li>
                 <li>
@@ -143,7 +143,7 @@ export const CarouselContacts = () => {
                     rel="noreferrer"
                     href="//join.skype.com/invite/LKpoW1O76w1d"
                   >
-                    <img src={Skype} alt="Skype" />
+                    <SocialListItemImg src={Skype} alt="Skype" />
                   </a>
                 </li>
               </SocialList>
@@ -169,16 +169,16 @@ export const CarouselContacts = () => {
                     rel="noreferrer"
                     href="//t.me/serhii_click2dep"
                   >
-                    <img src={Telegram} alt="Telegram" />
+                    <SocialListItemImg src={Telegram} alt="Telegram" />
                   </a>
                 </li>
                 <li>
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="serhiy.click2dep@gmail.com"
+                    href="mailto:serhiy.click2dep@gmail.com"
                   >
-                    <img src={Mail} alt="Mail" />
+                    <SocialListItemImg src={Mail} alt="Mail" />
                   </a>
                 </li>
                 <li>
@@ -187,7 +187,7 @@ export const CarouselContacts = () => {
                     rel="noreferrer"
                     href="//www.linkedin.com/in/serhii-tsyhanenko-62b56b2b1"
                   >
-                    <img src={LinkedIn} alt="LinkedIn" />
+                    <SocialListItemImg src={LinkedIn} alt="LinkedIn" />
                   </a>
                 </li>
                 <li>
@@ -196,7 +196,7 @@ export const CarouselContacts = () => {
                     rel="noreferrer"
                     href="//join.skype.com/invite/JqsqBiwnOhBC"
                   >
-                    <img src={Skype} alt="Skype" />
+                    <SocialListItemImg src={Skype} alt="Skype" />
                   </a>
                 </li>
               </SocialList>
@@ -222,16 +222,16 @@ export const CarouselContacts = () => {
                     rel="noreferrer"
                     href="//t.me/click2depp_nikita"
                   >
-                    <img src={Telegram} alt="Telegram" />
+                    <SocialListItemImg src={Telegram} alt="Telegram" />
                   </a>
                 </li>
                 <li>
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="nikita.click2dep@gmail.com"
+                    href="mailto:nikita.click2dep@gmail.com"
                   >
-                    <img src={Mail} alt="Mail" />
+                    <SocialListItemImg src={Mail} alt="Mail" />
                   </a>
                 </li>
                 <li>
@@ -240,7 +240,7 @@ export const CarouselContacts = () => {
                     rel="noreferrer"
                     href="//www.linkedin.com/in/nikita-mosenz-2bb6482b3/"
                   >
-                    <img src={LinkedIn} alt="LinkedIn" />
+                    <SocialListItemImg src={LinkedIn} alt="LinkedIn" />
                   </a>
                 </li>
                 <li>
@@ -249,7 +249,7 @@ export const CarouselContacts = () => {
                     rel="noreferrer"
                     href="//join.skype.com/invite/IdR6HBKEMrYb"
                   >
-                    <img src={Skype} alt="Skype" />
+                    <SocialListItemImg src={Skype} alt="Skype" />
                   </a>
                 </li>
               </SocialList>
@@ -276,16 +276,16 @@ export const CarouselContacts = () => {
                     rel="noreferrer"
                     href="//t.me/antonclick2dep"
                   >
-                    <img src={Telegram} alt="Telegram" />
+                    <SocialListItemImg src={Telegram} alt="Telegram" />
                   </a>
                 </li>
                 <li>
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="anton.click2dep@gmail.com"
+                    href="mailto:anton.click2dep@gmail.com"
                   >
-                    <img src={Mail} alt="Mail" />
+                    <SocialListItemImg src={Mail} alt="Mail" />
                   </a>
                 </li>
                 <li>
@@ -294,7 +294,7 @@ export const CarouselContacts = () => {
                     rel="noreferrer"
                     href="//www.linkedin.com/in/anton-shmakov-72a099322/"
                   >
-                    <img src={LinkedIn} alt="LinkedIn" />
+                    <SocialListItemImg src={LinkedIn} alt="LinkedIn" />
                   </a>
                 </li>
                 <li>
@@ -303,7 +303,7 @@ export const CarouselContacts = () => {
                     rel="noreferrer"
                     href="//join.skype.com/invite/LJNoTuvngI1c"
                   >
-                    <img src={Skype} alt="Skype" />
+                    <SocialListItemImg src={Skype} alt="Skype" />
                   </a>
                 </li>
               </SocialList>
@@ -329,16 +329,16 @@ export const CarouselContacts = () => {
                     rel="noreferrer"
                     href="//t.me/kiril_click2dep"
                   >
-                    <img src={Telegram} alt="Telegram" />
+                    <SocialListItemImg src={Telegram} alt="Telegram" />
                   </a>
                 </li>
                 <li>
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="kiril.click2dep@gmail.com"
+                    href="mailto:kiril.click2dep@gmail.com"
                   >
-                    <img src={Mail} alt="Mail" />
+                    <SocialListItemImg src={Mail} alt="Mail" />
                   </a>
                 </li>
                 <li>
@@ -347,7 +347,7 @@ export const CarouselContacts = () => {
                     rel="noreferrer"
                     href="//www.linkedin.com/in/kiril-click2dep-122a31299/"
                   >
-                    <img src={LinkedIn} alt="LinkedIn" />
+                    <SocialListItemImg src={LinkedIn} alt="LinkedIn" />
                   </a>
                 </li>
                 <li>
@@ -356,7 +356,7 @@ export const CarouselContacts = () => {
                     rel="noreferrer"
                     href="//join.skype.com/invite/Ms9vkkl4Zdrk"
                   >
-                    <img src={Skype} alt="Skype" />
+                    <SocialListItemImg src={Skype} alt="Skype" />
                   </a>
                 </li>
               </SocialList>
@@ -364,6 +364,6 @@ export const CarouselContacts = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-    </div>
+    </CarouselContactsBlock>
   );
 };

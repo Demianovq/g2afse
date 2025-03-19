@@ -1,5 +1,3 @@
-@import-normalize; /* bring in normalize.css styles */
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #272727;
+  overflow-x: hidden;
 }
 
 code {
@@ -15,12 +14,40 @@ code {
     monospace;
 }
 
+.swiper-pagination-bullet {
+  @media screen and (max-width: 767px) {
+    opacity: 1;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 14px !important;
+    height: 14px !important;
+    opacity: 0.7;
+  }
+}
+
+.ModalStyledBlock {
+  margin-top: 30px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    position: absolute;
+    bottom: 15px;
+  }
+}
+
 .first-swiper .swiper-slide-next .slide {
-  width: 298px;
+  width: 268px;
   height: 367px;
+
+  @media screen and (max-width: 767px) {
+    width: 140px;
+    height: 217px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 230px;
+    height: 326px;
+  }
   @media screen and (min-width: 1600px) {
-    width: 400px;
-    height: 510px;
+    width: 310px;
+    height: 490px;
     padding: 50px 60px;
   }
 }
@@ -30,7 +57,15 @@ code {
   font-size: 15px;
   font-weight: 400;
   line-height: 19px;
-  letter-spacing: 0;
+
+  @media screen and (max-width: 767px) {
+    font-size: 8px;
+    line-height: 11px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    line-height: 16.08px;
+    font-size: 12.56px;
+  }
 
   @media screen and (min-width: 1600px) {
     font-size: 17px;
@@ -40,6 +75,7 @@ code {
 
 .first-swiper .swiper-slide-next .slide-position {
   margin-top: 50px;
+
   @media screen and (min-width: 1600px) {
     margin-top: 150px;
     font-size: 17px;
@@ -47,6 +83,14 @@ code {
 }
 
 .first-swiper .swiper-slide-next .slide-title {
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    line-height: 26px;
+    font-size: 22px;
+  }
   @media screen and (min-width: 1600px) {
     font-size: 40px;
   }
@@ -54,6 +98,12 @@ code {
 
 .first-swiper .swiper-slide:not(.swiper-slide-next) {
   margin-top: 40px;
+  @media screen and (max-width: 767px) {
+    margin-top: 0px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 0px;
+  }
 }
 
 .first-swiper .swiper-button-prev {
@@ -80,6 +130,13 @@ code {
   margin: 55px auto;
 
   align-items: center;
+  @media screen and (max-width: 767px) {
+    margin: 28px auto;
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 40px auto;
+  }
 
   @media screen and (min-width: 1600px) {
     margin: 100px auto;
@@ -102,6 +159,14 @@ code {
   object-fit: contain;
   transform-origin: center;
   position: absolute;
+  @media screen and (max-width: 767px) {
+    max-width: 32px;
+    max-height: 32px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 50px;
+    max-height: 50px;
+  }
   @media screen and (min-width: 1600px) {
     max-width: 111px;
     max-height: 111px;
@@ -282,21 +347,21 @@ code {
   0%,
   100% {
     opacity: 1;
-    filter: drop-shadow(0px 0px 10px #0394eb);
+    filter: drop-shadow(0px 0px 10px #57c3ff);
   }
   20%,
   40%,
   60%,
   80% {
     opacity: 0;
-    filter: drop-shadow(0px 0px 5px #0394eb);
+    filter: drop-shadow(0px 0px 5px #57c3ff);
   }
   30%,
   50%,
   70%,
   90% {
     opacity: 1;
-    filter: drop-shadow(0px 0px 15px #0394eb);
+    filter: drop-shadow(0px 0px 15px #57c3ff);
   }
 }
 
@@ -310,7 +375,7 @@ code {
   60%,
   80% {
     opacity: 1;
-    filter: drop-shadow(0px 0px 15px #0394eb);
+    filter: drop-shadow(0px 0px 15px #57c3ff);
   }
   30%,
   50%,
@@ -348,29 +413,34 @@ code {
   animation: flicker2_light 1s steps(1);
 }
 
+.CircleGeos {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
 .letter.c {
   margin-right: 60px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 33px;
+  }
   @media screen and (min-width: 1600px) {
     margin-right: 80px;
   }
 }
 
-.letter.l {
-  margin-right: 40px;
-  @media screen and (min-width: 1600px) {
-    margin-right: 60px;
-  }
-}
-
-.letter.i {
-  margin-right: 50px;
-  @media screen and (min-width: 1600px) {
-    margin-right: 70px;
-  }
-}
-
 .letter.C2 {
   margin-right: 60px;
+  @media screen and (max-width: 767px) {
+    margin-right: 22px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 38px;
+  }
   @media screen and (min-width: 1600px) {
     margin-right: 80px;
   }
@@ -378,6 +448,12 @@ code {
 
 .letter.K {
   margin-right: 60px;
+  @media screen and (max-width: 767px) {
+    margin-right: 21px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 35px;
+  }
   @media screen and (min-width: 1600px) {
     margin-right: 80px;
   }
@@ -385,6 +461,13 @@ code {
 
 .letter.num2 {
   margin-right: 70px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 25px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 40px;
+  }
   @media screen and (min-width: 1600px) {
     margin-right: 90px;
   }
@@ -392,12 +475,24 @@ code {
 
 .letter.D {
   margin-right: 65px;
+  @media screen and (max-width: 767px) {
+    margin-right: 23px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 37px;
+  }
   @media screen and (min-width: 1600px) {
     margin-right: 85px;
   }
 }
 .letter.E {
   margin-right: 60px;
+  @media screen and (max-width: 767px) {
+    margin-right: 23px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 35px;
+  }
   @media screen and (min-width: 1600px) {
     margin-right: 80px;
   }
@@ -405,6 +500,12 @@ code {
 
 .letter.l {
   margin-right: 40px;
+  @media screen and (max-width: 767px) {
+    margin-right: 11px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 18px;
+  }
   @media screen and (min-width: 1600px) {
     margin-right: 60px;
   }
@@ -412,6 +513,12 @@ code {
 
 .letter.i {
   margin-right: 40px;
+  @media screen and (max-width: 767px) {
+    margin-right: 17px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 25px;
+  }
   @media screen and (min-width: 1600px) {
     margin-right: 60px;
   }
@@ -439,6 +546,12 @@ code {
   font-size: 24px;
   line-height: 29.26px;
   letter-spacing: 0%;
+  border-radius: 17px;
+  @media screen and (max-width: 767px) {
+    width: 128px;
+    font-size: 17px;
+    line-height: 20px;
+  }
 }
 
 .custom-file-upload:hover {
@@ -474,6 +587,10 @@ code {
 }
 
 .ManagerText {
+  margin-top: 5px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 12px;
+  }
   @media screen and (min-width: 1200px) and (max-width: 1599px) {
     margin-top: 20px;
   }
@@ -482,34 +599,86 @@ code {
   }
 }
 
-.swiper-pagination-bullet {
-  width: 13px !important;
-  height: 13px !important;
-  opacity: 0.5; /* Полупрозрачные */
-}
-
 .second-swiper {
   padding-bottom: 80px;
 }
 
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+  @media screen and (min-width: 1200px) and (max-width: 1599px) {
+    font-size: 25px;
+  }
+  @media screen and (min-width: 1600px) {
+    font-size: 30px;
+  }
+}
+
 .second-swiper .swiper-pagination {
   top: 380px !important; /* Опускаем только в третьей карусели */
+  @media screen and (max-width: 767px) {
+    top: 190px !important;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    top: 175px !important;
+  }
   @media screen and (min-width: 1200px) and (max-width: 1599px) {
     top: 380px !important;
   }
 }
+
 .third-swiper .swiper-pagination {
   top: 520px !important;
+  @media screen and (max-width: 767px) {
+    top: 240px !important;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    top: 410px !important;
+  }
   @media screen and (min-width: 1200px) and (max-width: 1599px) {
     top: 550px !important;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: #0a0a0a;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #0a0a0a;
+
+  position: relative;
+}
+
+@media screen and (max-width: 1199px) {
+  .swiper-pagination-bullet-active::after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: #0091ff; /* Синий цвет */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .swiper-pagination-bullet-active::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: #0091ff; /* Синий цвет */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
 .swiper-button-prev,
 .swiper-button-next {
   color: #f0f8ff;
-}
-
-body {
-  overflow-x: hidden;
 }

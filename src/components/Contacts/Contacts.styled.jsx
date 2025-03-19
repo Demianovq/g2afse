@@ -1,8 +1,24 @@
 import styled from 'styled-components';
 
+import cursorResize from 'images/BackGrounds/cursorResize.png';
+
+import LinkedInMob from 'images/Contacts/LinkedInMob.png';
+import MailMob from 'images/Contacts/MailMob.png';
+import TelegramMob from 'images/Contacts/TelegramMob.png';
+import SkypeMob from 'images/Contacts/SkypeMob.png';
+
 export const ContactsSection = styled('div')`
   margin-top: 90px;
   position: relative;
+  &:hover {
+    cursor: url(${cursorResize}), e-resize;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 50px;
+  }
 `;
 
 export const ContactsTitle = styled('h3')`
@@ -18,6 +34,16 @@ export const ContactsTitle = styled('h3')`
   margin: 0;
   padding: 0;
   margin-bottom: 50px;
+  @media screen and (max-width: 767px) {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 60px;
+    line-height: 72px;
+    margin-bottom: 0px;
+  }
   @media screen and (min-width: 1600px) {
     font-size: 120px;
   }
@@ -68,6 +94,16 @@ export const ItemName = styled('span')`
   color: #0394eb;
   position: relative;
   z-index: 50;
+  @media screen and (max-width: 767px) {
+    font-size: 23px;
+
+    line-height: 27px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 25px;
+
+    line-height: 30px;
+  }
   @media screen and (min-width: 1600px) {
     font-size: 50px;
   }
@@ -86,6 +122,15 @@ export const ItemPosition = styled('span')`
   margin-top: 5px;
   position: relative;
   z-index: 50;
+  @media screen and (max-width: 767px) {
+    font-size: 9px;
+    line-height: 11px;
+    margin-top: 3px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 9px;
+    line-height: 10px;
+  }
   @media screen and (min-width: 1600px) {
     font-size: 15px;
     margin-top: 10px;
@@ -101,6 +146,9 @@ export const SocialList = styled('ul')`
   padding: 0;
   position: relative;
   z-index: 5;
+  @media screen and (max-width: 767px) {
+    margin-top: 9px;
+  }
 
   @media screen and (min-width: 1200px) and (max-width: 1599px) {
     flex-wrap: wrap;
@@ -108,10 +156,50 @@ export const SocialList = styled('ul')`
   }
 `;
 
+export const SocialListItemImg = styled('img')`
+  @media screen and (max-width: 767px) {
+    width: 26px;
+    &[alt='LinkedIn'] {
+      content: url(${LinkedInMob});
+    }
+    &[alt='Telegram'] {
+      content: url(${TelegramMob});
+    }
+    &[alt='Mail'] {
+      content: url(${MailMob});
+    }
+    &[alt='Skype'] {
+      content: url(${SkypeMob});
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 21px;
+    &[alt='LinkedIn'] {
+      content: url(${LinkedInMob});
+    }
+    &[alt='Telegram'] {
+      content: url(${TelegramMob});
+    }
+    &[alt='Instagram'] {
+      content: url(${MailMob});
+    }
+    &[alt='Skype'] {
+      content: url(${SkypeMob});
+    }
+  }
+`;
+
 export const ContactsImg = styled('img')`
   display: block;
   z-index: 50;
+  @media screen and (max-width: 767px) {
+    width: 125px;
+  }
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 220px;
+  }
   @media screen and (min-width: 1200px) and (max-width: 1599px) {
     width: 300px;
   }
@@ -125,6 +213,17 @@ export const Bg1 = styled('img')`
   position: absolute;
   right: 50px;
   top: -50px;
+  @media screen and (max-width: 767px) {
+    z-index: 2;
+    width: 80px;
+    top: -80px;
+    right: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 180px;
+    top: -90px;
+    right: 50px;
+  }
 `;
 
 export const Bg2 = styled('img')`
@@ -132,6 +231,13 @@ export const Bg2 = styled('img')`
   bottom: 50px;
   left: 550px;
   z-index: -10;
+  @media screen and (max-width: 767px) {
+    width: 82px;
+    left: 0px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    left: 50px;
+  }
 `;
 
 export const Bg3 = styled('img')`
@@ -139,6 +245,13 @@ export const Bg3 = styled('img')`
   top: 520px;
   right: 380px;
   z-index: -10;
+  @media screen and (max-width: 767px) {
+    width: 82px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    right: 360px;
+    top: 530px;
+  }
 `;
 
 export const SmokeBg = styled('img')`
@@ -146,8 +259,39 @@ export const SmokeBg = styled('img')`
   top: 12%;
   left: -120px;
   z-index: -20;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 676px;
+  }
   @media screen and (min-width: 1600px) {
     width: 1126px;
   }
+`;
+
+export const ContactsMob = styled('div')`
+  position: relative;
+  width: 100%;
+  height: auto;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const SmokeMobBg1 = styled('img')`
+  position: absolute;
+  top: 39%;
+  transform: translateX(-44%) rotate(180deg);
+  left: 50%;
+  z-index: -20;
+`;
+
+export const SmokeMobBg2 = styled('img')`
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-53%);
+  z-index: -21;
 `;

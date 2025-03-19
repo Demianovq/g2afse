@@ -33,7 +33,7 @@ const ProgressCircle = ({ percentage = 15 }) => {
 
   useEffect(() => {
     if (inView) {
-      animate(count, percentage, { duration: 1.5, ease: 'easeInOut' });
+      animate(count, percentage, { duration: 4, ease: 'easeInOut' });
     }
   }, [inView, count, percentage]);
 
@@ -77,8 +77,9 @@ const ProgressCircle = ({ percentage = 15 }) => {
           strokeDasharray={circumference} // Длина обруча
           strokeDashoffset={offset} // Заполнение на 60%
           strokeLinecap="round"
+          className="CircleGeos"
           style={{
-            filter: 'blur(4px)', // Размытие для эффекта подсветки
+            filter: 'blur(2px)', // Размытие для эффекта подсветки
             opacity: 0.6, // Уменьшение яркости подсветки
           }}
         />
@@ -94,7 +95,7 @@ const ProgressCircle = ({ percentage = 15 }) => {
           strokeDashoffset="106.76"
           strokeLinecap="round"
           animate={{ strokeDashoffset: inView ? offset : circumference }}
-          transition={{ duration: 1.5, ease: 'easeInOut' }}
+          transition={{ duration: 4, ease: 'easeInOut' }}
         />
       </svg>
       <div

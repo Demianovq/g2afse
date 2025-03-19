@@ -1,10 +1,19 @@
 import styled from 'styled-components';
 
+import BtnCvHover from 'images/VacanciesGif/BtnCvHover.svg';
+import SendHover from 'images/Modal/SendHover.svg';
+
+import PdfImageMob from 'images/Modal/PdfImageMob.png';
+
 export const ButtonCv = styled('button')`
   all: unset;
   position: relative;
   border: none;
   cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+  width: 100px;
 
   @media screen and (min-width: 1200px) and (max-width: 1599px) {
     margin-top: 20px;
@@ -18,6 +27,16 @@ export const ButtonCv = styled('button')`
 
 export const ButtonImg = styled('img')`
   filter: drop-shadow(1px 1px 3.5px #00a3ff);
+  &:hover {
+    content: url(${BtnCvHover});
+    filter: drop-shadow(1px 1px 3.5px #f0f8ff);
+  }
+  @media screen and (max-width: 767px) {
+    width: 92px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 68px;
+  }
   @media screen and (min-width: 1200px) and (max-width: 1599px) {
     width: 120px;
   }
@@ -26,9 +45,26 @@ export const ButtonImg = styled('img')`
 export const ModalBlock = styled('div')`
   background-color: #333333;
   border-radius: 19px;
-  border: 2px solid #2d2d2d;
+  border: 4px solid #2d2d2d;
   padding: 60px 60px 120px 60px;
   position: relative;
+  @media screen and (max-width: 767px) {
+    padding: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 30px;
+    padding-bottom: 100px;
+  }
+`;
+
+export const StyledForm = styled('form')`
+  display: flex;
+  gap: 40px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 0px;
+  }
 `;
 
 export const ModalTitle = styled('h3')`
@@ -40,12 +76,34 @@ export const ModalTitle = styled('h3')`
   color: #f0f8ff;
   margin: 0;
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const ModalMsgBtn = styled('button')`
   border: none;
   background-color: transparent;
   margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+`;
+
+export const ModalMsgBtnImg = styled('img')`
+  @media screen and (max-width: 767px) {
+    width: 40px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 32px;
+  }
 `;
 
 export const ModalInputName = styled('input')`
@@ -64,7 +122,19 @@ export const ModalInputName = styled('input')`
   line-height: 19.5px;
   letter-spacing: 0%;
   margin-bottom: 20px;
-
+  border-radius: 15px;
+  @media screen and (max-width: 767px) {
+    width: 240px;
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 191px;
+    font-size: 8px;
+    line-height: 10px;
+    margin-bottom: 11px;
+  }
   &::placeholder {
     color: rgba(255, 255, 255, 0.5); /* Полупрозрачный текст */
   }
@@ -93,6 +163,21 @@ export const ModalTextInput = styled('textarea')`
   font-size: 16px;
   line-height: 19.5px;
   letter-spacing: 0%;
+  border-radius: 15px;
+
+  @media screen and (max-width: 767px) {
+    width: 240px;
+    height: 95px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 191px;
+    height: 93px;
+    font-size: 10px;
+    line-height: 12px;
+  }
   &::placeholder {
     color: rgba(255, 255, 255, 0.5); /* Полупрозрачный текст */
   }
@@ -112,6 +197,22 @@ export const ModalLabel = styled('label')`
   font-size: 16px;
   line-height: 19.5px;
   letter-spacing: 0%;
+  @media screen and (max-width: 767px) {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 8px;
+    line-height: 10px;
+  }
+`;
+
+export const FileBlock = styled('div')``;
+
+export const FileImg = styled('img')`
+  @media screen and (max-width: 767px) {
+    content: url(${PdfImageMob});
+  }
 `;
 
 export const ModalStyledBlock = styled('div')`
@@ -123,10 +224,26 @@ export const ModalSendBtn = styled('button')`
   border: none;
   background-color: inherit;
   cursor: pointer;
-  padding: 0;
-  display: block;
-  width: 120px;
-  position: absolute;
-  bottom: 50px;
-  left: 43%;
+  margin-top: 20px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    left: 39%;
+    bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+    display: block;
+    width: 120px;
+    position: absolute;
+    bottom: 50px;
+    left: 43%;
+  }
+`;
+
+export const ModalSendBtnImg = styled('img')`
+  filter: drop-shadow(1px 1px 3.5px #00a3ff);
+  &:hover {
+    content: url(${SendHover});
+    filter: drop-shadow(1px 1px 3.5px #f0f8ff);
+  }
 `;

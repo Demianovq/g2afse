@@ -2,6 +2,12 @@ import styled from 'styled-components';
 
 export const PartnersSection = styled('div')`
   margin-top: 90px;
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 10px;
+  }
 
   position: relative;
 `;
@@ -15,6 +21,17 @@ export const PartnersImgBox = styled('div')`
   justify-content: center;
   margin-right: 50px;
   overflow: hidden;
+  @media screen and (max-width: 767px) {
+    margin-right: 12px;
+    width: 150px;
+    height: auto;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 140px;
+    height: 100px;
+    margin-right: 0px;
+  }
 
   @media screen and (min-width: 1600px) {
     margin-right: 100px;
@@ -27,6 +44,14 @@ export const PartnersImgGlobal = styled('img')`
   object-fit: contain;
   align-items: center;
   text-align: center;
+  @media screen and (max-width: 767px) {
+    width: 112px;
+    height: auto;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 92px;
+    height: auto;
+  }
 
   @media screen and (min-width: 1600px) {
     width: 260px;
@@ -92,9 +117,15 @@ export const PartnersBgImg = styled('img')`
   position: absolute;
   top: 45%;
   left: 13.5%;
-  z-index: 1;
+  z-index: -500;
+  @media screen and (max-width: 767px) {
+    width: 80px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 175px;
+    top: 110%;
+    left: 17%;
+  }
 `;
 
-export const MarqueeBox = styled('div')`
-  max-width: 1800px;
-`;
+export const MarqueeBox = styled('div')``;

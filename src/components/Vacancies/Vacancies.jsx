@@ -76,8 +76,6 @@ export const Vacancies = () => {
             </AccountStyledBlock>
           </AccountBlock>
           <VacanciesBgStyled1 src={VacanciesBg} alt="" />
-
-          {/* <VacanciesBgStyled4 src={ReviewsBg3} alt="" /> */}
         </VacanciesSection>
       </Container>
     </>

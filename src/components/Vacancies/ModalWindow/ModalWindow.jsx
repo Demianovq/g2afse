@@ -10,6 +10,7 @@ import Telegram from 'images/Modal/telegram.svg';
 import PdfImage from 'images/Modal/PdfImage.svg';
 import Done from 'images/Modal/Done.png';
 import Send from 'images/Modal/Send.svg';
+
 import sucsessGif from 'images/VacanciesGif/sucsessGif.gif.gif';
 
 import {
@@ -23,6 +24,11 @@ import {
   ModalTextInput,
   ModalStyledBlock,
   ModalSendBtn,
+  StyledForm,
+  ModalMsgBtnImg,
+  FileBlock,
+  FileImg,
+  ModalSendBtnImg,
 } from './ModalWindowStyled';
 
 import styled from 'styled-components';
@@ -133,6 +139,8 @@ const ModalWindow = () => {
           },
           overlay: {
             backgroundColor: 'rgba(0, 0, 0, 0.5)',
+            backdropFilter: 'blur(8px)',
+
             zIndex: 9999, // Поднимаем модалку выше всех!
           },
         }}
@@ -164,17 +172,14 @@ const ModalWindow = () => {
                   width: '100%',
                   maxWidth: '287px',
                   margin: '0',
+                  borderRadius: '15px',
                 }}
               />
             </div>
           ) : (
             <div>
               <ModalTitle>Join our team</ModalTitle>
-              <form
-                ref={formRef}
-                onSubmit={handleSubmit}
-                style={{ display: 'flex', gap: '40px' }}
-              >
+              <StyledForm ref={formRef} onSubmit={handleSubmit}>
                 <div>
                   <ModalLabel>Name *</ModalLabel>
                   <ModalInputName
@@ -190,7 +195,7 @@ const ModalWindow = () => {
                     type="button"
                     onClick={() => handleMessengerSelect('skype')}
                   >
-                    <img
+                    <ModalMsgBtnImg
                       src={Skype}
                       alt="Skype"
                       style={{
@@ -207,7 +212,7 @@ const ModalWindow = () => {
                     type="button"
                     onClick={() => handleMessengerSelect('telegram')}
                   >
-                    <img
+                    <ModalMsgBtnImg
                       src={Telegram}
                       alt="Telegram"
                       style={{
@@ -236,7 +241,7 @@ const ModalWindow = () => {
                     name="more"
                     placeholder="Any other details you'd like to share"
                   ></ModalTextInput>
-                  <div
+                  <FileBlock
                     style={{
                       position: 'relative',
                     }}
@@ -249,22 +254,22 @@ const ModalWindow = () => {
                         gap: '10px',
                       }}
                     >
-                      <input type="file" onChange={handleFileChange} />
+                      <input
+                        type="file"
+                        accept="application/pdf"
+                        onChange={handleFileChange}
+                      />
                       Your CV
-                      <img src={PdfImage} alt="Pdf Icon" />
+                      <FileImg src={PdfImage} alt="Pdf Icon" />
                     </label>
                     <span className="file-name">{fileName}</span>
-                  </div>
+                  </FileBlock>
 
                   <ModalSendBtn type="submit">
-                    <img
-                      src={Send}
-                      alt=""
-                      style={{ filter: 'drop-shadow(1px 1px 3.5px #00a3ff)' }}
-                    />
+                    <ModalSendBtnImg src={Send} alt="Send Button" />
                   </ModalSendBtn>
                 </ModalStyledBlock>
-              </form>
+              </StyledForm>
             </div>
           )}
         </ModalBlock>

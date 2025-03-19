@@ -2,10 +2,21 @@ import styled from 'styled-components';
 import SmokeBg from 'images/BackGrounds/SmokeBg.png';
 
 export const StatsSection = styled('div')`
+  position: relative;
   padding-top: 120px;
   background-image: url('${SmokeBg}');
   background-position: 50% 80%;
   background-repeat: no-repeat;
+  @media screen and (max-width: 767px) {
+    background-size: 534px auto;
+    background-position: 50% 34%;
+    padding-top: 90px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-position: 50% 50%;
+    background-size: 697px auto;
+    padding-top: 50px;
+  }
   @media screen and (min-width: 1600px) {
     background-size: 1549px;
     padding-top: 150px;
@@ -25,6 +36,15 @@ export const StatsTextFirst = styled('div')`
   display: flex;
   justify-content: flex-start;
   gap: 12px;
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
+    line-height: 24px;
+    gap: 5px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 35px;
+    line-height: 42px;
+  }
   @media screen and (min-width: 1600px) {
     font-size: 64px;
   }
@@ -40,6 +60,14 @@ export const StatsTextFirstStyled = styled('p')`
   margin: 0;
 
   color: #0394eb;
+  @media screen and (max-width: 767px) {
+    font-size: 9px;
+    line-height: 8px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
   @media screen and (min-width: 1600px) {
     font-size: 25px;
   }
@@ -58,6 +86,15 @@ export const StatsTextSecond = styled('div')`
   display: flex;
   justify-content: end;
   gap: 12px;
+  @media screen and (max-width: 767px) {
+    font-size: 9px;
+    line-height: 8px;
+    gap: 5px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
   @media screen and (min-width: 1600px) {
     font-size: 25px;
   }
@@ -76,6 +113,15 @@ export const StatsTextSecondStyled = styled('p')`
   margin: 0;
 
   color: #f0f8ff;
+
+  @media screen and (max-width: 767px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 35px;
+    line-height: 42px;
+  }
   @media screen and (min-width: 1600px) {
     font-size: 64px;
   }
@@ -100,8 +146,23 @@ export const StatsTextMission = styled('p')`
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #f0f8ff;
+  @media screen and (max-width: 767px) {
+    font-size: 9px;
+    line-height: 11px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
   @media screen and (min-width: 1600px) {
     font-size: 30px;
+  }
+`;
+
+export const StatsTextMissionStyled = styled('p')`
+  display: inline;
+  @media screen and (max-width: 767px) {
+    display: block;
   }
 `;
 
@@ -121,6 +182,19 @@ export const StatsList = styled('ul')`
   box-shadow: 0px 0px 2px 0px #0394eb;
 
   box-shadow: 0px 0px 10px 0px #0394eb;
+  @media screen and (max-width: 767px) {
+    gap: 0px;
+    border: none;
+    box-shadow: none;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    gap: 80px;
+    padding: 0;
+    margin-top: 20px;
+  }
+
   @media screen and (min-width: 1600px) {
     margin: 100px 50px 0px 50px;
     gap: 120px;
@@ -147,10 +221,43 @@ export const StatsListItem = styled('li')`
   text-align: center;
   padding-top: 30px;
   padding-bottom: 15px;
-  text-shadow: 1px 1px 3.5px #00a3ff, 1px 1px 25px #0394eb, 1px 1px 50px #0394eb;
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.4), 0px 0px 30px #00a3ff,
+    0px 0px 40px #0394eb;
+  @media screen and (max-width: 767px) {
+    font-size: 35px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 22px;
+    line-height: 26px;
+    padding-top: 18px;
+    padding-bottom: 8px;
+  }
+
   @media screen and (min-width: 1600px) {
     font-size: 45px;
     gap: 10px;
+  }
+
+  &:nth-child(1) {
+    @media screen and (max-width: 767px) {
+      margin-left: 70px;
+    }
+  }
+  &:nth-child(2) {
+    @media screen and (max-width: 767px) {
+      margin-right: 180px;
+    }
+  }
+  &:nth-child(3) {
+    @media screen and (max-width: 767px) {
+      margin-left: 20px;
+    }
+  }
+  &:nth-child(4) {
+    @media screen and (max-width: 767px) {
+      margin-right: 160px;
+    }
   }
 `;
 
@@ -164,6 +271,14 @@ export const StatsListItemText = styled('p')`
   text-decoration-skip-ink: none;
   color: #57c3ff;
   text-shadow: 1px 1px 3.5px #00a3ff, 1px 1px 25px #0394eb, 1px 1px 50px #0394eb;
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 10px;
+    line-height: 12px;
+  }
   @media screen and (min-width: 1600px) {
     font-size: 20px;
   }
@@ -174,8 +289,64 @@ export const StatsImg = styled('img')`
   width: 960px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 680px;
+  }
   @media screen and (min-width: 1600px) {
     width: 1123px;
     margin-top: 20px;
+  }
+`;
+
+export const StatsImgMob = styled('img')`
+  display: block;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const StatsMobBg1 = styled('img')`
+  position: absolute;
+  top: 55%;
+  left: 38%;
+  z-index: -500;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const StatsMobBg2 = styled('img')`
+  position: absolute;
+  bottom: 10%;
+  left: 8%;
+  z-index: -500;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const StatsMobBg3 = styled('img')`
+  position: absolute;
+  bottom: 4%;
+  left: 46%;
+  z-index: -500;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const StatsMobBg4 = styled('img')`
+  position: absolute;
+  bottom: -10%;
+  left: 15%;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 `;

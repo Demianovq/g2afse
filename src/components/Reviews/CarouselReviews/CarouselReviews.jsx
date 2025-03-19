@@ -20,12 +20,15 @@ export const CarouselReviews = () => {
     <StyledSwiper
       className="first-swiper"
       modules={[Navigation, A11y]}
-      spaceBetween={0}
-      slidesPerView={3}
+      spaceBetween={-30}
+      breakpoints={{
+        320: { slidesPerView: 1 }, // Для мобилок
+        768: { slidesPerView: 2 }, // Для планшетов
+        1200: { slidesPerView: 3 }, // Для больших экранов
+        1600: { slidesPerView: 3 }, // Например, для 1600px и выше
+      }}
       navigation
       loop={true}
-      onSwiper={swiper => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide>
         <Card>

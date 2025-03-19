@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import { Swiper } from 'swiper/react';
 
 export const StyledSwiper = styled(Swiper)`
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 728px;
+  }
   @media screen and (min-width: 1600px) {
     max-width: 1360px;
   }
@@ -19,6 +22,14 @@ export const CardTitle = styled('p')`
   color: #f0f8ff;
   margin: 0;
   margin-bottom: 20px;
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
   @media screen and (min-width: 1600px) {
     font-size: 32px;
     margin-bottom: 50px;
@@ -36,6 +47,14 @@ export const CardTitleText = styled('p')`
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #f0f8ff;
+
+  @media screen and (max-width: 767px) {
+    font-size: 8px;
+    line-height: 11px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 12.56px;
+  }
 
   @media screen and (min-width: 1600px) {
     font-size: 15px;
@@ -59,6 +78,11 @@ export const CardTitlePosition = styled('p')`
   color: #57c3ff;
   margin-bottom: 0;
   margin-top: 30px;
+  @media screen and (max-width: 767px) {
+    font-size: 8px;
+    line-height: 11px;
+  }
+
   @media screen and (min-width: 1600px) {
     font-size: 15px;
     bottom: 40px;
@@ -79,14 +103,25 @@ export const CardBox = styled('div')`
   position: relative;
 
   border-radius: 15.73px;
-  backdrop-filter: blur(8.277144432067871px);
+  backdrop-filter: blur(3.277144432067871px);
 
-  box-shadow: 0px 2.82px 2.82px 0px #00000040;
+  box-shadow: -7px 7px 7px 0px #00000040;
   padding: 30px 23px;
   background: #fffefe0d;
+  @media screen and (max-width: 767px) {
+    width: 140px;
+    height: 217px;
+    padding: 24px 24px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 230px;
+    height: 326px;
+    padding: 30px 30px;
+  }
   @media screen and (min-width: 1600px) {
-    width: 300px;
-    height: 430px;
+    width: 270px;
+    height: 400px;
     padding: 50px 40px;
   }
 `;

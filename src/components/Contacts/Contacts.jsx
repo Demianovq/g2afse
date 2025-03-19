@@ -5,6 +5,9 @@ import {
   Bg2,
   Bg3,
   SmokeBg,
+  ContactsMob,
+  SmokeMobBg1,
+  SmokeMobBg2,
 } from './Contacts.styled';
 
 import { Container } from 'components/Container/Container.styled';
@@ -14,7 +17,10 @@ import ContactsBg1 from 'images/BackGrounds/ContactsBg1.svg';
 import ContactsBg2 from 'images/BackGrounds/ContactsBg2.svg';
 import Smoke from 'images/BackGrounds/Smoke.svg';
 
+import SmokeMob from 'images/BackGrounds/SmokeMob.png';
+
 import { CarouselContacts } from './CarouselContacts/CarouselContacts';
+import { ContactsMobile } from './CarouselContacts/ContactsMobile';
 
 export const Contacts = () => {
   return (
@@ -27,7 +33,12 @@ export const Contacts = () => {
           <Bg2 src={ContactsBg1} alt="ContactsBg" />
           <Bg3 src={ContactsBg2} alt="ContactsBg" />
 
-          <SmokeBg src={Smoke} alt="" />
+          <SmokeBg src={Smoke} alt="Smoke" />
+          <ContactsMob>
+            <ContactsMobile />
+            <SmokeMobBg1 src={SmokeMob} alt="Smoke" />
+            <SmokeMobBg2 src={SmokeMob} alt="Smoke" />
+          </ContactsMob>
         </ContactsSection>
       </Container>
     </>

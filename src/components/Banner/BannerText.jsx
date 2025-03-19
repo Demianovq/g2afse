@@ -25,7 +25,7 @@ const MovingText = () => {
     <BannerTextBlock className="w-full bg-gray-100 p-4 space-y-4">
       <MarqueeText
         text="Meet Click2Dep at iGB L!VE | Innovating the Future of Affiliates | London, July 2-3, 2025   "
-        velocity={50}
+        velocity={35}
       />
     </BannerTextBlock>
   );
