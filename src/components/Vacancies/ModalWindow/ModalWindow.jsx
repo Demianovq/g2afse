@@ -5,8 +5,8 @@ import emailjs from '@emailjs/browser';
 
 import BtnCv from 'images/VacanciesGif/BtnCv.svg';
 
-import Skype from 'images/Modal/skype.svg';
-import Telegram from 'images/Modal/telegram.svg';
+import teams from 'images/Modal/teams.svg';
+import Telegram from 'images/Modal/telegram2.svg';
 import PdfImage from 'images/Modal/PdfImage.svg';
 import Done from 'images/Modal/Done.png';
 import Send from 'images/Modal/Send.svg';
@@ -193,14 +193,14 @@ const ModalWindow = () => {
 
                   <ModalMsgBtn
                     type="button"
-                    onClick={() => handleMessengerSelect('skype')}
+                    onClick={() => handleMessengerSelect('teams')}
                   >
                     <ModalMsgBtnImg
-                      src={Skype}
-                      alt="Skype"
+                      src={teams}
+                      alt="teams"
                       style={{
                         backgroundColor:
-                          messenger === 'skype' ? 'white' : 'transparent',
+                          messenger === 'teams' ? 'white' : 'transparent',
 
                         cursor: 'pointer',
                         borderRadius: '100px',

@@ -1,17 +1,20 @@
 import styled from 'styled-components';
 
-import cursorResize from 'images/BackGrounds/cursorResize.png';
+import cursorR from 'images/BackGrounds/cursorR.png';
 
 import LinkedInMob from 'images/Contacts/LinkedInMob.png';
 import MailMob from 'images/Contacts/MailMob.png';
 import TelegramMob from 'images/Contacts/TelegramMob.png';
-import SkypeMob from 'images/Contacts/SkypeMob.png';
+import Mail from 'images/Contacts/Mail.png';
+import Telegram from 'images/Contacts/Telegram.png';
+import LinkedIn from 'images/Contacts/LinkedIn.png';
+import Teams from 'images/Contacts/Teams.png';
 
 export const ContactsSection = styled('div')`
   margin-top: 90px;
   position: relative;
   &:hover {
-    cursor: url(${cursorResize}), e-resize;
+    cursor: url(${cursorR}), e-resize;
   }
   @media screen and (max-width: 767px) {
     margin-top: 30px;
@@ -168,24 +171,31 @@ export const SocialListItemImg = styled('img')`
     &[alt='Mail'] {
       content: url(${MailMob});
     }
-    &[alt='Skype'] {
-      content: url(${SkypeMob});
+    &[alt='Teams'] {
+      content: url(${Teams});
     }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 21px;
     &[alt='LinkedIn'] {
-      content: url(${LinkedInMob});
+      content: url(${LinkedIn});
     }
     &[alt='Telegram'] {
-      content: url(${TelegramMob});
+      content: url(${Telegram});
     }
     &[alt='Instagram'] {
-      content: url(${MailMob});
+      content: url(${Mail});
     }
-    &[alt='Skype'] {
-      content: url(${SkypeMob});
+    &[alt='Teams'] {
+      content: url(${Teams});
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &[alt='Teams'] {
+      content: url(${Teams});
+      width: 40px;
     }
   }
 `;

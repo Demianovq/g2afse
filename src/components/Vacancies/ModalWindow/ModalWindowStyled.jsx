@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import BtnCvHover from 'images/VacanciesGif/BtnCvHover.svg';
 import SendHover from 'images/Modal/SendHover.svg';
 
-import PdfImageMob from 'images/Modal/PdfImageMob.png';
+import PdfImageMob from 'images/Modal/pdfImageMob1.svg';
 
 export const ButtonCv = styled('button')`
   all: unset;
@@ -103,6 +103,12 @@ export const ModalMsgBtnImg = styled('img')`
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 32px;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1599px) {
+    width: 52px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 56px;
   }
 `;
 

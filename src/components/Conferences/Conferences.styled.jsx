@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import cursorResize from 'images/BackGrounds/cursorResize.png';
+import cursorR from 'images/BackGrounds/cursorR.png';
 
 export const ConferencesSection = styled('div')`
   padding-bottom: 80px;
@@ -10,7 +10,7 @@ export const ConferencesSection = styled('div')`
   margin: 0 auto;
   position: relative;
   &:hover {
-    cursor: url(${cursorResize}), e-resize;
+    cursor: url(${cursorR}), e-resize;
   }
 
   @media screen and (max-width: 767px) {

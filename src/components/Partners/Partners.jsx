@@ -16,6 +16,8 @@ import Stars7 from 'images/Partners/Stars7.svg';
 import Boomerang from 'images/Partners/Boomerang.svg';
 import Bit7 from 'images/Partners/Bit7.svg';
 import Partners247 from 'images/Partners/Partners247.svg';
+import WDCasino from 'images/Partners/WDCasino.svg';
+import Affcomunity from 'images/Partners/Affcomunity.svg'
 
 import PartnersBg from 'images/BackGrounds/PartnersBg.svg';
 
@@ -31,6 +33,8 @@ export const Partners = () => {
     Partners247,
     Stars7,
     Boomerang,
+    WDCasino,
+    Affcomunity,
   ];
 
   return (
@@ -46,8 +50,8 @@ export const Partners = () => {
           </Marquee>
         </MarqueeBox>
 
-        <PartnersBgImg src={PartnersBg} alt="" />
+        <PartnersBgImg src={PartnersBg} alt="PartnersBg" />
       </PartnersSection>
     </PureContainer>
-  );
-};
+  )
+}
