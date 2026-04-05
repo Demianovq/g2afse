@@ -10,7 +10,7 @@ export const Banner = () => {
       <BannerSection>
         <MovingText />
         <BannerImg src={BannerFooter} alt="Banner of Conference" />
-        <BannerImgMob src={BannerMob} alt="Banner of Conference" />
+        <BannerImgMob src={BannerFooter} alt="Banner of Conference" />
       </BannerSection>
     </>
   );

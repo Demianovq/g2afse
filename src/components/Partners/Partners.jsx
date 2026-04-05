@@ -8,16 +8,16 @@ import {
 
 import { PureContainer } from 'components/Container/Container.styled';
 
-import Chilli from 'images/Partners/Chilli.svg';
-import Wow from 'images/Partners/Wow.svg';
 import MioMedia from 'images/Partners/MioMedia.svg';
 import Gypsy from 'images/Partners/Gypsy.svg';
 import Stars7 from 'images/Partners/Stars7.svg';
 import Boomerang from 'images/Partners/Boomerang.svg';
 import Bit7 from 'images/Partners/Bit7.svg';
-import Partners247 from 'images/Partners/Partners247.svg';
-import WDCasino from 'images/Partners/WDCasino.svg';
 import Affcomunity from 'images/Partners/Affcomunity.svg'
+import PayHouse from 'images/Partners/Payhouse.svg'
+import Cloacking from 'images/Partners/Cloacking.svg'
+import OutCore from 'images/Partners/Outcore.svg'
+import Money from 'images/Partners/Money.svg'
 
 import PartnersBg from 'images/BackGrounds/PartnersBg.svg';
 
@@ -25,16 +25,16 @@ import Marquee from 'react-marquee-slider';
 
 export const Partners = () => {
   const images = [
-    Chilli,
-    Wow,
-    Bit7,
     MioMedia,
     Gypsy,
-    Partners247,
+    Bit7,
+    PayHouse,
+    Cloacking,
+    OutCore,
+    Money,
     Stars7,
-    Boomerang,
-    WDCasino,
     Affcomunity,
+    Boomerang,
   ];
 
   return (

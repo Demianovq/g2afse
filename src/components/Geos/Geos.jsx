@@ -38,17 +38,17 @@ export const Geos = () => {
           </GeosImgStyled>
           <GeosList>
             <GeosListItem>
-              <ProgressCircle percentage={60} />
+              <ProgressCircle percentage={30} />
 
               <GeosListItemSource>FB</GeosListItemSource>
             </GeosListItem>
             <li>
-              <ProgressCircle percentage={15} />
+              <ProgressCircle percentage={30} />
 
               <GeosListItemSource>ASO</GeosListItemSource>
             </li>
             <li>
-              <ProgressCircle percentage={15} />
+              <ProgressCircle percentage={30} />
 
               <GeosListItemSource>PPC</GeosListItemSource>
             </li>

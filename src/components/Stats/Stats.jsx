@@ -36,21 +36,21 @@ export const Stats = () => {
           <StatsTextFirst>
             <StatsTextf>More</StatsTextf>
             <StatsTextFirstStyled>than just</StatsTextFirstStyled>
-            <StatsTextf>affiliate network.</StatsTextf>
+            <StatsTextf>affiliate network</StatsTextf>
           </StatsTextFirst>
           <StatsTextSecond>
             <StatsTextp>We really</StatsTextp>
 
             <StatsTextSecondStyled>care</StatsTextSecondStyled>
             <StatsTextp>about</StatsTextp>
-            <StatsTextSecondStyled>your result.</StatsTextSecondStyled>
+            <StatsTextSecondStyled>your result</StatsTextSecondStyled>
           </StatsTextSecond>
 
           <StatsTextMission>
             Click2Dep has been a reliable partner in the gambling and betting
             verticals since 2023.
             <StatsTextMissionStyled>
-              The mission of the network is high profit for each partner.
+              The mission of the network is high profit for each partner
             </StatsTextMissionStyled>
           </StatsTextMission>
 
@@ -59,7 +59,7 @@ export const Stats = () => {
 
           <StatsList>
             <StatsListItem>
-              <span>600+</span> <StatsListItemText>Offers</StatsListItemText>
+              <span>2000+</span> <StatsListItemText>Offers</StatsListItemText>
             </StatsListItem>
             <StatsListItem>
               <span>200+</span>

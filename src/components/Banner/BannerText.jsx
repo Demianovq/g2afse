@@ -10,7 +10,7 @@ const MarqueeText = ({ text, velocity = 20 }) => {
           key={index}
           className="text-2xl font-bold whitespace-nowrap"
           style={{
-            color: index === 23 ? ' #E21369' : ' #fcf9e1;',
+            color: index === 10 ? ' #0086D6' : ' #fcf9e1',
           }}
         >
           {char}
@@ -24,8 +24,8 @@ const MovingText = () => {
   return (
     <BannerTextBlock className="w-full bg-gray-100 p-4 space-y-4">
       <MarqueeText
-        text="Meet Click2Dep at iGB L!VE | Innovating the Future of Affiliates | London, July 2-3, 2025   "
-        velocity={35}
+        text="Meet Click2Dep at SBC SUMMIT | The Greatest Show in Gaming | LISBON, 29 SEPTEMBER – 1 OCTOBER 2026   "
+        velocity={40}
       />
     </BannerTextBlock>
   );

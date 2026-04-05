@@ -32,7 +32,7 @@ export const BannerTextStyle = styled('span')`
   font-weight: 400;
   font-size: 50px;
   line-height: 60.25px;
-  letter-spacing: 0%;
+  letter-spacing: 0.02em;
   color: #fcf9e1;
   -webkit-text-stroke: 0.5px #015396;
   white-space: pre;
@@ -61,6 +61,6 @@ export const BannerTextBlock = styled('div')`
   transform: translate(-50%, -50%);
   width: 99%; /* Растягиваем текст на всю ширину */
   @media screen and (max-width: 767px) {
-    top: 20%;
+    top: 30%;
   }
 `;

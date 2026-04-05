@@ -142,7 +142,7 @@ export const StatsTextMission = styled('p')`
   font-size: 21px;
   font-weight: 500;
   line-height: 35px;
-  text-align: justified;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #f0f8ff;
@@ -161,8 +161,12 @@ export const StatsTextMission = styled('p')`
 
 export const StatsTextMissionStyled = styled('p')`
   display: inline;
+
   @media screen and (max-width: 767px) {
     display: block;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 10px;
   }
 `;
 

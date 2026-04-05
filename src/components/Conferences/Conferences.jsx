@@ -21,6 +21,10 @@ import Amsterdam from 'images/Conferences/Amsterdam.png';
 import Warsaw from 'images/Conferences/Warsaw.png';
 import Barcelona from 'images/Conferences/Barcelona.png';
 import KyivConv from 'images/Conferences/KyivConv.png';
+import London from 'images/Conferences/London.png';
+import Rome from 'images/Conferences/Rome.png';
+import Lisbon25 from 'images/Conferences/Lisbon25.png';
+import Barcelona26 from 'images/Conferences/Barcelona26.png';
 
 import ConfBg1 from 'images/BackGrounds/ConfBg1.png';
 import ConfBg2 from 'images/BackGrounds/ConfBg2.png';
@@ -38,26 +42,21 @@ export const Conferences = () => {
           spaceBetween={0}
           breakpoints={{
             320: { slidesPerView: 1 },
-            340: { slidesPerView: 1.5 }, // Для мобилок
-            768: { slidesPerView: 3.5 }, // Для планшетов
-            1200: { slidesPerView: 2.5 }, // Для больших экранов
-            1600: { slidesPerView: 3 }, // Например, для 1600px и выше
-          }} // Позволит слайдам занимать свою естественную ширину
-          centeredSlides={true} // Центральный слайд будет находиться в центре
-          loop={true} // Бесконечный цикл
+            340: { slidesPerView: 1.5 },
+            768: { slidesPerView: 3.5 },
+            1200: { slidesPerView: 2.5 },
+            1600: { slidesPerView: 3 },
+          }}
+          centeredSlides={true}
+          loop={true}
           pagination={{ clickable: true }}
         >
           <SwiperSlide>
             <ConfBox>
-              <ConfBoxImg className="slide" src={Kyiv} alt="Picture of Kyiv" />
-            </ConfBox>
-          </SwiperSlide>
-          <SwiperSlide>
-            <ConfBox>
               <ConfBoxImg
                 className="slide"
-                src={Warsaw}
-                alt="Picture of Warsaw"
+                src={Rome}
+                alt="Picture of London"
               />
             </ConfBox>
           </SwiperSlide>
@@ -65,8 +64,8 @@ export const Conferences = () => {
             <ConfBox>
               <ConfBoxImg
                 className="slide"
-                src={KyivConv}
-                alt="Picture of Kyiv"
+                src={Lisbon25}
+                alt="Picture of London"
               />
             </ConfBox>
           </SwiperSlide>
@@ -74,8 +73,17 @@ export const Conferences = () => {
             <ConfBox>
               <ConfBoxImg
                 className="slide"
-                src={Amsterdam}
-                alt="Picture of Amsterdam"
+                src={London}
+                alt="Picture of London"
+              />
+            </ConfBox>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ConfBox>
+              <ConfBoxImg
+                className="slide"
+                src={Barcelona}
+                alt="Picture of Barcelona"
               />
             </ConfBox>
           </SwiperSlide>
@@ -92,8 +100,40 @@ export const Conferences = () => {
             <ConfBox>
               <ConfBoxImg
                 className="slide"
-                src={Barcelona}
-                alt="Picture of Barcelona"
+                src={Amsterdam}
+                alt="Picture of Amsterdam"
+              />
+            </ConfBox>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ConfBox>
+              <ConfBoxImg
+                className="slide"
+                src={KyivConv}
+                alt="Picture of Kyiv"
+              />
+            </ConfBox>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ConfBox>
+              <ConfBoxImg
+                className="slide"
+                src={Warsaw}
+                alt="Picture of Warsaw"
+              />
+            </ConfBox>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ConfBox>
+              <ConfBoxImg className="slide" src={Kyiv} alt="Picture of Kyiv" />
+            </ConfBox>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ConfBox>
+              <ConfBoxImg
+                className="slide"
+                src={Barcelona26}
+                alt="Picture of London"
               />
             </ConfBox>
           </SwiperSlide>
