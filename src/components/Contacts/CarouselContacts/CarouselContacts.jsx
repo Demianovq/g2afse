@@ -374,7 +374,7 @@ export const CarouselContacts = () => {
           >
             <SwiperCard className="slide">
               <ContactsImg src={Kiril} alt="employee" />
-              <ItemName>Helper</ItemName>
+              <ItemName>Mr. C2D</ItemName>
               <ItemPosition>Affiliate Manager</ItemPosition>
               <SocialList>
                 <li>

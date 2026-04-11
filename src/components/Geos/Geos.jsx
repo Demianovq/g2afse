@@ -45,7 +45,7 @@ export const Geos = () => {
             <li>
               <ProgressCircle percentage={30} />
 
-              <GeosListItemSource>ASO</GeosListItemSource>
+              <GeosListItemSource>SEO</GeosListItemSource>
             </li>
             <li>
               <ProgressCircle percentage={30} />

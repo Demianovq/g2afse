@@ -115,7 +115,7 @@ export const ContactsMobile = () => {
         <MobListItem>
           <ContactsImg src={Serhii} alt="employee" />
           <ItemName>Vitaliy</ItemName>
-          <ItemPosition>Advertiser Manager</ItemPosition>
+          <ItemPosition>Advertisers Manager</ItemPosition>
           <SocialList>
             <li>
               <a
@@ -162,7 +162,7 @@ export const ContactsMobile = () => {
         <MobListItem>
           <ContactsImg src={Olga} alt="employee" />
           <ItemName>Olga</ItemName>
-          <ItemPosition>Advertiser Manager</ItemPosition>
+          <ItemPosition>Advertisers Manager</ItemPosition>
           <SocialList>
             <li>
               <a target="_blank" rel="noreferrer" href="//t.me/Olga_click2dep">
@@ -205,7 +205,7 @@ export const ContactsMobile = () => {
         <MobListItem>
           <ContactsImg src={Nikita} alt="employee" />
           <ItemName>Nikita</ItemName>
-          <ItemPosition>Affiliate Manager</ItemPosition>
+          <ItemPosition>Team Leader</ItemPosition>
           <SocialList>
             <li>
               <a
@@ -251,12 +251,12 @@ export const ContactsMobile = () => {
         </MobListItem>
         <MobListItem>
           <ContactsImg src={Anton} alt="employee" />
-          <ItemName>Anton</ItemName>
+          <ItemName>Andrew</ItemName>
           <ItemPosition>Affiliate Manager</ItemPosition>
 
           <SocialList>
             <li>
-              <a target="_blank" rel="noreferrer" href="//t.me/antonclick2dep">
+              <a target="_blank" rel="noreferrer" href="//t.me/Click2Dep_andrey">
                 <SocialListItemImg src={Telegram} alt="Telegram" />
               </a>
             </li>
@@ -264,7 +264,7 @@ export const ContactsMobile = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="mailto:anton.click2dep@gmail.com"
+                href="mailto:andrey.click2dep@gmail.com"
               >
                 <SocialListItemImg src={Mail} alt="Mail" />
               </a>
@@ -273,36 +273,36 @@ export const ContactsMobile = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="//www.linkedin.com/in/anton-shmakov-72a099322/"
+                href="//www.linkedin.com/in/андрій-шакун-93611a284/"
               >
                 <SocialListItemImg src={LinkedIn} alt="LinkedIn" />
               </a>
             </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="//teams.live.com/l/invite/FEACTo3LdE0RUHNKQE"
-              >
-                <SocialListItemImg
-                  style={{ width: '28px' }}
-                  src={Teams}
-                  alt="Teams"
-                />
-              </a>
-            </li>
+            {/*<li>*/}
+            {/*  <a*/}
+            {/*    target="_blank"*/}
+            {/*    rel="noreferrer"*/}
+            {/*    href="//teams.live.com/l/invite/FEACTo3LdE0RUHNKQE"*/}
+            {/*  >*/}
+            {/*    <SocialListItemImg*/}
+            {/*      style={{ width: '28px' }}*/}
+            {/*      src={Teams}*/}
+            {/*      alt="Teams"*/}
+            {/*    />*/}
+            {/*  </a>*/}
+            {/*</li>*/}
           </SocialList>
         </MobListItem>
         <MobListItem>
           <ContactsImg src={Kiril} alt="employee" />
-          <ItemName>Vitaliy</ItemName>
+          <ItemName>Mr. C2D</ItemName>
           <ItemPosition>Affiliate Manager</ItemPosition>
           <SocialList>
             <li>
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="//t.me/affvitalii_click2dep"
+                href="//t.me/Click2Dep_aff"
               >
                 <SocialListItemImg src={Telegram} alt="Telegram" />
               </a>
@@ -311,7 +311,7 @@ export const ContactsMobile = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="mailto:vitalii.aff.click2dep@gmail.com"
+                href="mailto:official@click2dep.net"
               >
                 <SocialListItemImg src={Mail} alt="Mail" />
               </a>
@@ -320,24 +320,24 @@ export const ContactsMobile = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="//www.linkedin.com/in/artem-click2dep-456240276/"
+                href="//www.linkedin.com/company/click2dep/"
               >
                 <SocialListItemImg src={LinkedIn} alt="LinkedIn" />
               </a>
             </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="//teams.live.com/l/invite/FEAqsOLglN7dT7S9AI"
-              >
-                <SocialListItemImg
-                  src={Teams}
-                  alt="Teams"
-                  style={{ width: '28px' }}
-                />
-              </a>
-            </li>
+            {/*<li>*/}
+            {/*  <a*/}
+            {/*    target="_blank"*/}
+            {/*    rel="noreferrer"*/}
+            {/*    href="//teams.live.com/l/invite/FEAqsOLglN7dT7S9AI"*/}
+            {/*  >*/}
+            {/*    <SocialListItemImg*/}
+            {/*      src={Teams}*/}
+            {/*      alt="Teams"*/}
+            {/*      style={{ width: '28px' }}*/}
+            {/*    />*/}
+            {/*  </a>*/}
+            {/*</li>*/}
           </SocialList>
         </MobListItem>
       </ContactsMobList>
